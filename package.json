@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/dottgonzo/streampagerouter/issues"
   },
-  "homepage": "https://github.com/dottgonzo/streampagerouter#readme"
+  "homepage": "https://github.com/dottgonzo/streampagerouter#readme",
+  "devDependencies": {
+    "typings": "^2.1.1"
+  }
 }
