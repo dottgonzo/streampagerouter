@@ -16,16 +16,30 @@
     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
     _paq.push(['trackPageView']);
     _paq.push(['enableLinkTracking']);
+
+
+    _paq.push(['setCustomVariable',
+      // Index, the number from 1 to 5 where this custom variable name is stored
+      1,
+      // Name, the name of the variable, for example: Gender, VisitorType
+      streamuri,
+      // Value, for example: "Male", "Female" or "new", "engaged", "customer"
+      "Male",
+      // Scope of the custom variable, "visit" means the custom variable applies to the current visit
+      "visit"
+    ]);
     (function () {
       var u = "//analytics.kernel.online/";
       _paq.push(['setTrackerUrl', u + 'piwik.php']);
       _paq.push(['setSiteId', '8']);
-      _paq.push(['trackEvent', 'Play', 'url', streamuri]);
-      _paq.push(['trackEvent', 'Play', 'title', '<%=title%>']);
+
+
+      _paq.push(['trackPageView']);
+
+
       var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
       g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + 'piwik.js'; s.parentNode.insertBefore(g, s);
     })();
-
   </script>
   <!-- End Piwik Code -->
 
