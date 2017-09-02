@@ -1,0 +1,39 @@
+{
+  "name": "streampagelib",
+  "description": "Videojs + hls contrib module",
+  "main": "dist/streampagelib.js",
+  "authors": [
+    "Dario Caruso"
+  ],
+  "license": "Apache-2.0",
+  "keywords": [
+    "hls"
+  ],
+  "homepage": "https://github.com/dottgonzo/streampagelib",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "css",
+    "typings",
+    "import*",
+    "index*",
+    "bower_components",
+    "test",
+    "tsconfig.json",
+    "typings.json",
+    "index.html",
+    "package*",
+    "src"
+  ],
+  "version": "0.0.12",
+  "_release": "0.0.12",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.12",
+    "commit": "51d98570843329dfac57bcb48e050faeb399387f"
+  },
+  "_source": "https://github.com/dottgonzo/streampagelib.git",
+  "_target": "^0.0.12",
+  "_originalSource": "streampagelib",
+  "_direct": true
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+<meta charset="utf-8">
+<!-- <link rel="shortcut icon" href="logo.gif" > -->
+<title><%=title%></title>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+
+<body style="margin:0px">
+  <div id="videotest"></div>
+
+
+  <script src="../bower/streampagelib/dist/streampagelib.js"></script>
+
+  <script>
+    var params = location.href.split('stream?')[1]
+    var uri = params.split('uri=')[1].split('&')[0]
+
+
+
+    var options = {
+      uri: uri,
+      el: 'videotest' // default is videojs
+    }
+
+    drawPlayer(options)
+  </script>
+
+
+</body>
+
+</html>
