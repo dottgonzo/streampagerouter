@@ -20,7 +20,8 @@
       var u = "//analytics.kernel.online/";
       _paq.push(['setTrackerUrl', u + 'piwik.php']);
       _paq.push(['setSiteId', '8']);
-      _paq.push(['trackEvent', 'Player', 'Play', streamuri]);
+      _paq.push(['trackEvent', 'Play', 'url', streamuri]);
+      _paq.push(['trackEvent', 'Play', 'title', '<%=title%>']);
       var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
       g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + 'piwik.js'; s.parentNode.insertBefore(g, s);
     })();
