@@ -21,7 +21,8 @@ export function router() {
 
                 res.send(compiled(
                     {
-                     title: req.query.title || 'player' 
+                     title: req.query.title || 'player',
+                     piwik_id:14
                     }
                 ))
 
