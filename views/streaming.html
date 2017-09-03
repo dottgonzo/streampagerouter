@@ -10,38 +10,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Piwik -->
   <script type="text/javascript">
-  if("<%=piwik_id%>"){
+    if ("<%=piwik_id%>" && "<%=piwik_id%>" != 'false') {
 
 
-    var streamuri = location.href.split('uri=')[1].split('&')[0]
+      var streamuri = location.href.split('uri=')[1].split('&')[0]
 
-    var _paq = _paq || [];
-    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-    _paq.push(['enableLinkTracking']);
-    _paq.push(['setCustomVariable',
-      // Index, the number from 1 to 5 where this custom variable name is stored
-      1,
-      // Name, the name of the variable, for example: Gender, VisitorType
-      "stream_uri",
-      // Value, for example: "Male", "Female" or "new", "engaged", "customer"
-      streamuri,
-      // Scope of the custom variable, "visit" means the custom variable applies to the current visit
-      "visit"
-    ]);
+      var _paq = _paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['enableLinkTracking']);
+      _paq.push(['setCustomVariable',
+        // Index, the number from 1 to 5 where this custom variable name is stored
+        1,
+        // Name, the name of the variable, for example: Gender, VisitorType
+        "stream_uri",
+        // Value, for example: "Male", "Female" or "new", "engaged", "customer"
+        streamuri,
+        // Scope of the custom variable, "visit" means the custom variable applies to the current visit
+        "visit"
+      ]);
 
-    _paq.push(['setSiteId', '<%=piwik_id%>']);
+      _paq.push(['setSiteId', '<%=piwik_id%>']);
 
-    (function () {
-      var u = "//analytics.kernel.online/";
-      _paq.push(['setTrackerUrl', u + 'piwik.php']);
+      (function () {
+        var u = "//analytics.kernel.online/";
+        _paq.push(['setTrackerUrl', u + 'piwik.php']);
 
-      _paq.push(['trackPageView']);
-      var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
-      g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + 'piwik.js'; s.parentNode.insertBefore(g, s);
-    })();
+        _paq.push(['trackPageView']);
+        var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + 'piwik.js'; s.parentNode.insertBefore(g, s);
+      })();
 
-  }
-  
+    }
   </script>
   <!-- End Piwik Code -->
 
