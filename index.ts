@@ -11,7 +11,7 @@ export function router() {
 
     router.use('/bower', express.static('bower_components'))
     
-    router.get('/stream', function (req, res) {
+    router.get('/', function (req, res) {
 
         fs.readFile(__dirname+'/views/streaming.html', 'utf8', function (err, data) {
             if (err) {
