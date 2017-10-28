@@ -54,16 +54,17 @@
 
   <script>
     var params = location.href.split('stream?')[1]
-    var uri = params.split('uri=')[1].split('&')[0]
+    var channel = params.split('channel=')[1].split('&')[0]
 
 
 
-    var options = {
-      uri: uri,
-      el: 'videotest' // default is videojs
-    }
+    var player = SPlayer({
+      channel: channel,
+      el: 'videotest', // default is videojs
+      ratio43: true,
+      hostname: 'stream034.be-on.tv'
+    })
 
-    drawPlayer(options)
   </script>
 
 

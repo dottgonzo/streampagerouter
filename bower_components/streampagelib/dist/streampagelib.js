@@ -1,7 +1,7 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 var inject = require('./../node_modules/cssify');
 var css = ".video-js .vjs-big-play-button .vjs-icon-placeholder:before, .vjs-button > .vjs-icon-placeholder:before, .video-js .vjs-modal-dialog, .vjs-modal-dialog .vjs-modal-dialog-content {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%; }\n  \n  .video-js .vjs-big-play-button .vjs-icon-placeholder:before, .vjs-button > .vjs-icon-placeholder:before {\n    text-align: center; }\n  \n  @font-face {\n    font-family: VideoJS;\n    src: url(\"../font/2.0.0/VideoJS.eot?#iefix\") format(\"eot\"); }\n  \n  @font-face {\n    font-family: VideoJS;\n    src: url(data:application/font-woff;charset=utf-8;base64,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) format(\"woff\"), url(data:application/x-font-ttf;charset=utf-8;base64,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FjY3PgE3LgEnIwYfAR4BFw4BBTM/ARUzESMGAyUVJwMchM2UWwgNq4JHrQgBAapUaAoJcWMBfiIhDiMrAQJLMB0BBAokNAIBPmMiIQ4iLAECSzAeAQUKJDQBP2MiIQ4iLAECSzAeAQUKJDQBAT75g+5B4arNLNIBJ44ByQL9BQ9mvYCKwA8FBQMDwwJVTGdzBf6VB8IHNR08lld9uT4LCRA/qGNxvUwHNR08lld9uT4LCRA/qGNxvUwHNR08lld9uT4LCRA/qGNxvVJkAWUDDEf+tYP5AQAAAAEAAAAABiAGtgAbAAABBAADER4BFzMRITU2ADcWABcVIREzPgE3EQIAA4D+4v6FBwJ/X+D+1QYBJ97eAScG/tXgX38CB/6FBrUH/oX+4v32X38CAlWV3gEnBgb+2d6V/asCf18CCgEeAXsAAAAAEADGAAEAAAAAAAEABwAAAAEAAAAAAAIABwAHAAEAAAAAAAMABwAOAAEAAAAAAAQABwAVAAEAAAAAAAUACwAcAAEAAAAAAAYABwAnAAEAAAAAAAoAKwAuAAEAAAAAAAsAEwBZAAMAAQQJAAEADgBsAAMAAQQJAAIADgB6AAMAAQQJAAMADgCIAAMAAQQJAAQADgCWAAMAAQQJAAUAFgCkAAMAAQQJAAYADgC6AAMAAQQJAAoAVgDIAAMAAQQJAAsAJgEeVmlkZW9KU1JlZ3VsYXJWaWRlb0pTVmlkZW9KU1ZlcnNpb24gMS4wVmlkZW9KU0dlbmVyYXRlZCBieSBzdmcydHRmIGZyb20gRm9udGVsbG8gcHJvamVjdC5odHRwOi8vZm9udGVsbG8uY29tAFYAaQBkAGUAbwBKAFMAUgBlAGcAdQBsAGEAcgBWAGkAZABlAG8ASgBTAFYAaQBkAGUAbwBKAFMAVgBlAHIAcwBpAG8AbgAgADEALgAwAFYAaQBkAGUAbwBKAFMARwBlAG4AZQByAGEAdABlAGQAIABiAHkAIABzAHYAZwAyAHQAdABmACAAZgByAG8AbQAgAEYAbwBuAHQAZQBsAGwAbwAgAHAAcgBvAGoAZQBjAHQALgBoAHQAdABwADoALwAvAGYAbwBuAHQAZQBsAGwAbwAuAGMAbwBtAAAAAgAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfAAABAgEDAQQBBQEGAQcBCAEJAQoBCwEMAQ0BDgEPARABEQESARMBFAEVARYBFwEYARkBGgEbARwBHQEeAR8EcGxheQtwbGF5LWNpcmNsZQVwYXVzZQt2b2x1bWUtbXV0ZQp2b2x1bWUtbG93CnZvbHVtZS1taWQLdm9sdW1lLWhpZ2gQZnVsbHNjcmVlbi1lbnRlcg9mdWxsc2NyZWVuLWV4aXQGc3F1YXJlB3NwaW5uZXIJc3VidGl0bGVzCGNhcHRpb25zCGNoYXB0ZXJzBXNoYXJlA2NvZwZjaXJjbGUOY2lyY2xlLW91dGxpbmUTY2lyY2xlLWlubmVyLWNpcmNsZQJoZAZjYW5jZWwGcmVwbGF5CGZhY2Vib29rBWdwbHVzCGxpbmtlZGluB3R3aXR0ZXIGdHVtYmxyCXBpbnRlcmVzdBFhdWRpby1kZXNjcmlwdGlvbgVhdWRpbwAAAAAA) format(\"truetype\");\n    font-weight: normal;\n    font-style: normal; }\n  \n  .vjs-icon-play, .video-js .vjs-big-play-button .vjs-icon-placeholder:before, .video-js .vjs-play-control .vjs-icon-placeholder {\n    font-family: VideoJS;\n    font-weight: normal;\n    font-style: normal; }\n    .vjs-icon-play:before, .video-js .vjs-big-play-button .vjs-icon-placeholder:before, .video-js .vjs-play-control .vjs-icon-placeholder:before {\n      content: \"\\f101\"; }\n  \n  .vjs-icon-play-circle {\n    font-family: VideoJS;\n    font-weight: normal;\n    font-style: normal; }\n    .vjs-icon-play-circle:before {\n      content: \"\\f102\"; }\n  \n  .vjs-icon-pause, .video-js .vjs-play-control.vjs-playing .vjs-icon-placeholder {\n    font-family: VideoJS;\n    font-weight: normal;\n    font-style: normal; }\n    .vjs-icon-pause:before, .video-js .vjs-play-control.vjs-playing .vjs-icon-placeholder:before {\n      content: \"\\f103\"; }\n  \n  .vjs-icon-volume-mute, .video-js .vjs-mute-control.vjs-vol-0 .vjs-icon-placeholder {\n    font-family: VideoJS;\n    font-weight: normal;\n    font-style: normal; }\n    .vjs-icon-volume-mute:before, .video-js .vjs-mute-control.vjs-vol-0 .vjs-icon-placeholder:before {\n      content: \"\\f104\"; }\n  \n  .vjs-icon-volume-low, .video-js .vjs-mute-control.vjs-vol-1 .vjs-icon-placeholder {\n    font-family: VideoJS;\n    font-weight: normal;\n    font-style: normal; }\n    .vjs-icon-volume-low:before, .video-js .vjs-mute-control.vjs-vol-1 .vjs-icon-placeholder:before {\n      content: \"\\f105\"; }\n  \n  .vjs-icon-volume-mid, .video-js .vjs-mute-control.vjs-vol-2 .vjs-icon-placeholder {\n    font-family: VideoJS;\n    font-weight: normal;\n    font-style: normal; }\n    .vjs-icon-volume-mid:before, .video-js .vjs-mute-control.vjs-vol-2 .vjs-icon-placeholder:before {\n      content: \"\\f106\"; }\n  \n  .vjs-icon-volume-high, .video-js .vjs-mute-control .vjs-icon-placeholder {\n    font-family: VideoJS;\n    font-weight: normal;\n    font-style: normal; }\n    .vjs-icon-volume-high:before, .video-js .vjs-mute-control .vjs-icon-placeholder:before {\n      content: \"\\f107\"; }\n  \n  .vjs-icon-fullscreen-enter, .video-js .vjs-fullscreen-control .vjs-icon-placeholder {\n    font-family: VideoJS;\n    font-weight: normal;\n    font-style: normal; }\n    .vjs-icon-fullscreen-enter:before, .video-js .vjs-fullscreen-control .vjs-icon-placeholder:before {\n      content: \"\\f108\"; }\n  \n  .vjs-icon-fullscreen-exit, .video-js.vjs-fullscreen .vjs-fullscreen-control .vjs-icon-placeholder {\n    font-family: VideoJS;\n    font-weight: normal;\n    font-style: normal; }\n    .vjs-icon-fullscreen-exit:before, .video-js.vjs-fullscreen .vjs-fullscreen-control .vjs-icon-placeholder:before {\n      content: \"\\f109\"; }\n  \n  .vjs-icon-square {\n    font-family: VideoJS;\n    font-weight: normal;\n    font-style: normal; }\n    .vjs-icon-square:before {\n      content: \"\\f10a\"; }\n  \n  .vjs-icon-spinner {\n    font-family: VideoJS;\n    font-weight: normal;\n    font-style: normal; }\n    .vjs-icon-spinner:before {\n      content: \"\\f10b\"; }\n  \n  .vjs-icon-subtitles, .video-js .vjs-subtitles-button .vjs-icon-placeholder, .video-js .vjs-subs-caps-button .vjs-icon-placeholder,\n  .video-js.video-js:lang(en-GB) .vjs-subs-caps-button .vjs-icon-placeholder,\n  .video-js.video-js:lang(en-IE) .vjs-subs-caps-button .vjs-icon-placeholder,\n  .video-js.video-js:lang(en-AU) .vjs-subs-caps-button .vjs-icon-placeholder,\n  .video-js.video-js:lang(en-NZ) .vjs-subs-caps-button .vjs-icon-placeholder {\n    font-family: VideoJS;\n    font-weight: normal;\n    font-style: normal; }\n    .vjs-icon-subtitles:before, .video-js .vjs-subtitles-button .vjs-icon-placeholder:before, .video-js .vjs-subs-caps-button .vjs-icon-placeholder:before,\n    .video-js.video-js:lang(en-GB) .vjs-subs-caps-button .vjs-icon-placeholder:before,\n    .video-js.video-js:lang(en-IE) .vjs-subs-caps-button .vjs-icon-placeholder:before,\n    .video-js.video-js:lang(en-AU) .vjs-subs-caps-button .vjs-icon-placeholder:before,\n    .video-js.video-js:lang(en-NZ) .vjs-subs-caps-button .vjs-icon-placeholder:before {\n      content: \"\\f10c\"; }\n  \n  .vjs-icon-captions, .video-js .vjs-captions-button .vjs-icon-placeholder, .video-js:lang(en) .vjs-subs-caps-button .vjs-icon-placeholder,\n  .video-js:lang(fr-CA) .vjs-subs-caps-button .vjs-icon-placeholder {\n    font-family: VideoJS;\n    font-weight: normal;\n    font-style: normal; }\n    .vjs-icon-captions:before, .video-js .vjs-captions-button .vjs-icon-placeholder:before, .video-js:lang(en) .vjs-subs-caps-button .vjs-icon-placeholder:before,\n    .video-js:lang(fr-CA) .vjs-subs-caps-button .vjs-icon-placeholder:before {\n      content: \"\\f10d\"; }\n  \n  .vjs-icon-chapters, .video-js .vjs-chapters-button .vjs-icon-placeholder {\n    font-family: VideoJS;\n    font-weight: normal;\n    font-style: normal; }\n    .vjs-icon-chapters:before, .video-js .vjs-chapters-button .vjs-icon-placeholder:before {\n      content: \"\\f10e\"; }\n  \n  .vjs-icon-share {\n    font-family: VideoJS;\n    font-weight: normal;\n    font-style: normal; }\n    .vjs-icon-share:before {\n      content: \"\\f10f\"; }\n  \n  .vjs-icon-cog {\n    font-family: VideoJS;\n    font-weight: normal;\n    font-style: normal; }\n    .vjs-icon-cog:before {\n      content: \"\\f110\"; }\n  \n  .vjs-icon-circle, .video-js .vjs-play-progress, .video-js .vjs-volume-level {\n    font-family: VideoJS;\n    font-weight: normal;\n    font-style: normal; }\n    .vjs-icon-circle:before, .video-js .vjs-play-progress:before, .video-js .vjs-volume-level:before {\n      content: \"\\f111\"; }\n  \n  .vjs-icon-circle-outline {\n    font-family: VideoJS;\n    font-weight: normal;\n    font-style: normal; }\n    .vjs-icon-circle-outline:before {\n      content: \"\\f112\"; }\n  \n  .vjs-icon-circle-inner-circle {\n    font-family: VideoJS;\n    font-weight: normal;\n    font-style: normal; }\n    .vjs-icon-circle-inner-circle:before {\n      content: \"\\f113\"; }\n  \n  .vjs-icon-hd {\n    font-family: VideoJS;\n    font-weight: normal;\n    font-style: normal; }\n    .vjs-icon-hd:before {\n      content: \"\\f114\"; }\n  \n  .vjs-icon-cancel, .video-js .vjs-control.vjs-close-button .vjs-icon-placeholder {\n    font-family: VideoJS;\n    font-weight: normal;\n    font-style: normal; }\n    .vjs-icon-cancel:before, .video-js .vjs-control.vjs-close-button .vjs-icon-placeholder:before {\n      content: \"\\f115\"; }\n  \n  .vjs-icon-replay, .video-js .vjs-play-control.vjs-ended .vjs-icon-placeholder {\n    font-family: VideoJS;\n    font-weight: normal;\n    font-style: normal; }\n    .vjs-icon-replay:before, .video-js .vjs-play-control.vjs-ended .vjs-icon-placeholder:before {\n      content: \"\\f116\"; }\n  \n  .vjs-icon-facebook {\n    font-family: VideoJS;\n    font-weight: normal;\n    font-style: normal; }\n    .vjs-icon-facebook:before {\n      content: \"\\f117\"; }\n  \n  .vjs-icon-gplus {\n    font-family: VideoJS;\n    font-weight: normal;\n    font-style: normal; }\n    .vjs-icon-gplus:before {\n      content: \"\\f118\"; }\n  \n  .vjs-icon-linkedin {\n    font-family: VideoJS;\n    font-weight: normal;\n    font-style: normal; }\n    .vjs-icon-linkedin:before {\n      content: \"\\f119\"; }\n  \n  .vjs-icon-twitter {\n    font-family: VideoJS;\n    font-weight: normal;\n    font-style: normal; }\n    .vjs-icon-twitter:before {\n      content: \"\\f11a\"; }\n  \n  .vjs-icon-tumblr {\n    font-family: VideoJS;\n    font-weight: normal;\n    font-style: normal; }\n    .vjs-icon-tumblr:before {\n      content: \"\\f11b\"; }\n  \n  .vjs-icon-pinterest {\n    font-family: VideoJS;\n    font-weight: normal;\n    font-style: normal; }\n    .vjs-icon-pinterest:before {\n      content: \"\\f11c\"; }\n  \n  .vjs-icon-audio-description, .video-js .vjs-descriptions-button .vjs-icon-placeholder {\n    font-family: VideoJS;\n    font-weight: normal;\n    font-style: normal; }\n    .vjs-icon-audio-description:before, .video-js .vjs-descriptions-button .vjs-icon-placeholder:before {\n      content: \"\\f11d\"; }\n  \n  .vjs-icon-audio, .video-js .vjs-audio-button .vjs-icon-placeholder {\n    font-family: VideoJS;\n    font-weight: normal;\n    font-style: normal; }\n    .vjs-icon-audio:before, .video-js .vjs-audio-button .vjs-icon-placeholder:before {\n      content: \"\\f11e\"; }\n  \n  .video-js {\n    display: block;\n    vertical-align: top;\n    box-sizing: border-box;\n    color: #fff;\n    background-color: #000;\n    position: relative;\n    padding: 0;\n    font-size: 10px;\n    line-height: 1;\n    font-weight: normal;\n    font-style: normal;\n    font-family: Arial, Helvetica, sans-serif; }\n    .video-js:-moz-full-screen {\n      position: absolute; }\n    .video-js:-webkit-full-screen {\n      width: 100% !important;\n      height: 100% !important; }\n  \n  .video-js[tabindex=\"-1\"] {\n    outline: none; }\n  \n  .video-js *,\n  .video-js *:before,\n  .video-js *:after {\n    box-sizing: inherit; }\n  \n  .video-js ul {\n    font-family: inherit;\n    font-size: inherit;\n    line-height: inherit;\n    list-style-position: outside;\n    margin-left: 0;\n    margin-right: 0;\n    margin-top: 0;\n    margin-bottom: 0; }\n  \n  .video-js.vjs-fluid,\n  .video-js.vjs-16-9,\n  .video-js.vjs-4-3 {\n    width: 100%;\n    max-width: 100%;\n    height: 0; }\n  \n  .video-js.vjs-16-9 {\n    padding-top: 56.25%; }\n  \n  .video-js.vjs-4-3 {\n    padding-top: 75%; }\n  \n  .video-js.vjs-fill {\n    width: 100%;\n    height: 100%; }\n  \n  .video-js .vjs-tech {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%; }\n  \n  body.vjs-full-window {\n    padding: 0;\n    margin: 0;\n    height: 100%;\n    overflow-y: auto; }\n  \n  .vjs-full-window .video-js.vjs-fullscreen {\n    position: fixed;\n    overflow: hidden;\n    z-index: 1000;\n    left: 0;\n    top: 0;\n    bottom: 0;\n    right: 0; }\n  \n  .video-js.vjs-fullscreen {\n    width: 100% !important;\n    height: 100% !important;\n    padding-top: 0 !important; }\n  \n  .video-js.vjs-fullscreen.vjs-user-inactive {\n    cursor: none; }\n  \n  .vjs-hidden {\n    display: none !important; }\n  \n  .vjs-disabled {\n    opacity: 0.5;\n    cursor: default; }\n  \n  .video-js .vjs-offscreen {\n    height: 1px;\n    left: -9999px;\n    position: absolute;\n    top: 0;\n    width: 1px; }\n  \n  .vjs-lock-showing {\n    display: block !important;\n    opacity: 1;\n    visibility: visible; }\n  \n  .vjs-no-js {\n    padding: 20px;\n    color: #fff;\n    background-color: #000;\n    font-size: 18px;\n    font-family: Arial, Helvetica, sans-serif;\n    text-align: center;\n    width: 300px;\n    height: 150px;\n    margin: 0px auto; }\n  \n  .vjs-no-js a,\n  .vjs-no-js a:visited {\n    color: #66A8CC; }\n  \n  .video-js .vjs-big-play-button {\n    font-size: 3em;\n    line-height: 1.5em;\n    height: 1.5em;\n    width: 3em;\n    display: block;\n    position: absolute;\n    top: 10px;\n    left: 10px;\n    padding: 0;\n    cursor: pointer;\n    opacity: 1;\n    border: 0.06666em solid #fff;\n    background-color: #2B333F;\n    background-color: rgba(43, 51, 63, 0.7);\n    -webkit-border-radius: 0.3em;\n    -moz-border-radius: 0.3em;\n    border-radius: 0.3em;\n    -webkit-transition: all 0.4s;\n    -moz-transition: all 0.4s;\n    -ms-transition: all 0.4s;\n    -o-transition: all 0.4s;\n    transition: all 0.4s; }\n  \n  .vjs-big-play-centered .vjs-big-play-button {\n    top: 50%;\n    left: 50%;\n    margin-top: -0.75em;\n    margin-left: -1.5em; }\n  \n  .video-js:hover .vjs-big-play-button,\n  .video-js .vjs-big-play-button:focus {\n    border-color: #fff;\n    background-color: #73859f;\n    background-color: rgba(115, 133, 159, 0.5);\n    -webkit-transition: all 0s;\n    -moz-transition: all 0s;\n    -ms-transition: all 0s;\n    -o-transition: all 0s;\n    transition: all 0s; }\n  \n  .vjs-controls-disabled .vjs-big-play-button,\n  .vjs-has-started .vjs-big-play-button,\n  .vjs-using-native-controls .vjs-big-play-button,\n  .vjs-error .vjs-big-play-button {\n    display: none; }\n  \n  .vjs-has-started.vjs-paused.vjs-show-big-play-button-on-pause .vjs-big-play-button {\n    display: block; }\n  \n  .video-js button {\n    background: none;\n    border: none;\n    color: inherit;\n    display: inline-block;\n    overflow: visible;\n    font-size: inherit;\n    line-height: inherit;\n    text-transform: none;\n    text-decoration: none;\n    transition: none;\n    -webkit-appearance: none;\n    -moz-appearance: none;\n    appearance: none; }\n  \n  .vjs-control .vjs-button {\n    width: 100%;\n    height: 100%; }\n  \n  .video-js .vjs-control.vjs-close-button {\n    cursor: pointer;\n    height: 3em;\n    position: absolute;\n    right: 0;\n    top: 0.5em;\n    z-index: 2; }\n  \n  .video-js .vjs-modal-dialog {\n    background: rgba(0, 0, 0, 0.8);\n    background: -webkit-linear-gradient(-90deg, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0));\n    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0));\n    overflow: auto;\n    box-sizing: content-box; }\n  \n  .video-js .vjs-modal-dialog > * {\n    box-sizing: border-box; }\n  \n  .vjs-modal-dialog .vjs-modal-dialog-content {\n    font-size: 1.2em;\n    line-height: 1.5;\n    padding: 20px 24px;\n    z-index: 1; }\n  \n  .vjs-menu-button {\n    cursor: pointer; }\n  \n  .vjs-menu-button.vjs-disabled {\n    cursor: default; }\n  \n  .vjs-workinghover .vjs-menu-button.vjs-disabled:hover .vjs-menu {\n    display: none; }\n  \n  .vjs-menu .vjs-menu-content {\n    display: block;\n    padding: 0;\n    margin: 0;\n    font-family: Arial, Helvetica, sans-serif;\n    overflow: auto;\n    box-sizing: content-box; }\n  \n  .vjs-menu .vjs-menu-content > * {\n    box-sizing: border-box; }\n  \n  .vjs-scrubbing .vjs-menu-button:hover .vjs-menu {\n    display: none; }\n  \n  .vjs-menu li {\n    list-style: none;\n    margin: 0;\n    padding: 0.2em 0;\n    line-height: 1.4em;\n    font-size: 1.2em;\n    text-align: center;\n    text-transform: lowercase; }\n  \n  .vjs-menu li.vjs-menu-item:focus,\n  .vjs-menu li.vjs-menu-item:hover {\n    background-color: #73859f;\n    background-color: rgba(115, 133, 159, 0.5); }\n  \n  .vjs-menu li.vjs-selected,\n  .vjs-menu li.vjs-selected:focus,\n  .vjs-menu li.vjs-selected:hover {\n    background-color: #fff;\n    color: #2B333F; }\n  \n  .vjs-menu li.vjs-menu-title {\n    text-align: center;\n    text-transform: uppercase;\n    font-size: 1em;\n    line-height: 2em;\n    padding: 0;\n    margin: 0 0 0.3em 0;\n    font-weight: bold;\n    cursor: default; }\n  \n  .vjs-menu-button-popup .vjs-menu {\n    display: none;\n    position: absolute;\n    bottom: 0;\n    width: 10em;\n    left: -3em;\n    height: 0em;\n    margin-bottom: 1.5em;\n    border-top-color: rgba(43, 51, 63, 0.7); }\n  \n  .vjs-menu-button-popup .vjs-menu .vjs-menu-content {\n    background-color: #2B333F;\n    background-color: rgba(43, 51, 63, 0.7);\n    position: absolute;\n    width: 100%;\n    bottom: 1.5em;\n    max-height: 15em; }\n  \n  .vjs-workinghover .vjs-menu-button-popup:hover .vjs-menu,\n  .vjs-menu-button-popup .vjs-menu.vjs-lock-showing {\n    display: block; }\n  \n  .video-js .vjs-menu-button-inline {\n    -webkit-transition: all 0.4s;\n    -moz-transition: all 0.4s;\n    -ms-transition: all 0.4s;\n    -o-transition: all 0.4s;\n    transition: all 0.4s;\n    overflow: hidden; }\n  \n  .video-js .vjs-menu-button-inline:before {\n    width: 2.222222222em; }\n  \n  .video-js .vjs-menu-button-inline:hover,\n  .video-js .vjs-menu-button-inline:focus,\n  .video-js .vjs-menu-button-inline.vjs-slider-active,\n  .video-js.vjs-no-flex .vjs-menu-button-inline {\n    width: 12em; }\n  \n  .vjs-menu-button-inline .vjs-menu {\n    opacity: 0;\n    height: 100%;\n    width: auto;\n    position: absolute;\n    left: 4em;\n    top: 0;\n    padding: 0;\n    margin: 0;\n    -webkit-transition: all 0.4s;\n    -moz-transition: all 0.4s;\n    -ms-transition: all 0.4s;\n    -o-transition: all 0.4s;\n    transition: all 0.4s; }\n  \n  .vjs-menu-button-inline:hover .vjs-menu,\n  .vjs-menu-button-inline:focus .vjs-menu,\n  .vjs-menu-button-inline.vjs-slider-active .vjs-menu {\n    display: block;\n    opacity: 1; }\n  \n  .vjs-no-flex .vjs-menu-button-inline .vjs-menu {\n    display: block;\n    opacity: 1;\n    position: relative;\n    width: auto; }\n  \n  .vjs-no-flex .vjs-menu-button-inline:hover .vjs-menu,\n  .vjs-no-flex .vjs-menu-button-inline:focus .vjs-menu,\n  .vjs-no-flex .vjs-menu-button-inline.vjs-slider-active .vjs-menu {\n    width: auto; }\n  \n  .vjs-menu-button-inline .vjs-menu-content {\n    width: auto;\n    height: 100%;\n    margin: 0;\n    overflow: hidden; }\n  \n  .video-js .vjs-control-bar {\n    display: none;\n    width: 100%;\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    height: 3.0em;\n    background-color: #2B333F;\n    background-color: rgba(43, 51, 63, 0.7); }\n  \n  .vjs-has-started .vjs-control-bar {\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    visibility: visible;\n    opacity: 1;\n    -webkit-transition: visibility 0.1s, opacity 0.1s;\n    -moz-transition: visibility 0.1s, opacity 0.1s;\n    -ms-transition: visibility 0.1s, opacity 0.1s;\n    -o-transition: visibility 0.1s, opacity 0.1s;\n    transition: visibility 0.1s, opacity 0.1s; }\n  \n  .vjs-has-started.vjs-user-inactive.vjs-playing .vjs-control-bar {\n    visibility: visible;\n    opacity: 0;\n    -webkit-transition: visibility 1s, opacity 1s;\n    -moz-transition: visibility 1s, opacity 1s;\n    -ms-transition: visibility 1s, opacity 1s;\n    -o-transition: visibility 1s, opacity 1s;\n    transition: visibility 1s, opacity 1s; }\n  \n  .vjs-controls-disabled .vjs-control-bar,\n  .vjs-using-native-controls .vjs-control-bar,\n  .vjs-error .vjs-control-bar {\n    display: none !important; }\n  \n  .vjs-audio.vjs-has-started.vjs-user-inactive.vjs-playing .vjs-control-bar {\n    opacity: 1;\n    visibility: visible; }\n  \n  .vjs-has-started.vjs-no-flex .vjs-control-bar {\n    display: table; }\n  \n  .video-js .vjs-control {\n    position: relative;\n    text-align: center;\n    margin: 0;\n    padding: 0;\n    height: 100%;\n    width: 4em;\n    -webkit-box-flex: none;\n    -moz-box-flex: none;\n    -webkit-flex: none;\n    -ms-flex: none;\n    flex: none; }\n  \n  .vjs-button > .vjs-icon-placeholder:before {\n    font-size: 1.8em;\n    line-height: 1.67; }\n  \n  .video-js .vjs-control:focus:before,\n  .video-js .vjs-control:hover:before,\n  .video-js .vjs-control:focus {\n    text-shadow: 0em 0em 1em white; }\n  \n  .video-js .vjs-control-text {\n    border: 0;\n    clip: rect(0 0 0 0);\n    height: 1px;\n    overflow: hidden;\n    padding: 0;\n    position: absolute;\n    width: 1px; }\n  \n  .vjs-no-flex .vjs-control {\n    display: table-cell;\n    vertical-align: middle; }\n  \n  .video-js .vjs-custom-control-spacer {\n    display: none; }\n  \n  .video-js .vjs-progress-control {\n    cursor: pointer;\n    -webkit-box-flex: auto;\n    -moz-box-flex: auto;\n    -webkit-flex: auto;\n    -ms-flex: auto;\n    flex: auto;\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n    -webkit-align-items: center;\n    -ms-flex-align: center;\n    align-items: center;\n    min-width: 4em; }\n  \n  .vjs-live .vjs-progress-control {\n    display: none; }\n  \n  .vjs-no-flex .vjs-progress-control {\n    width: auto; }\n  \n  .video-js .vjs-progress-holder {\n    -webkit-box-flex: auto;\n    -moz-box-flex: auto;\n    -webkit-flex: auto;\n    -ms-flex: auto;\n    flex: auto;\n    -webkit-transition: all 0.2s;\n    -moz-transition: all 0.2s;\n    -ms-transition: all 0.2s;\n    -o-transition: all 0.2s;\n    transition: all 0.2s;\n    height: 0.3em; }\n  \n  .video-js .vjs-progress-control .vjs-progress-holder {\n    margin: 0 10px; }\n  \n  .video-js .vjs-progress-control:hover .vjs-progress-holder {\n    font-size: 1.666666666666666666em; }\n  \n  .video-js .vjs-progress-holder .vjs-play-progress,\n  .video-js .vjs-progress-holder .vjs-load-progress,\n  .video-js .vjs-progress-holder .vjs-load-progress div {\n    position: absolute;\n    display: block;\n    height: 100%;\n    margin: 0;\n    padding: 0;\n    width: 0;\n    left: 0;\n    top: 0; }\n  \n  .video-js .vjs-play-progress {\n    background-color: #fff; }\n    .video-js .vjs-play-progress:before {\n      font-size: 0.9em;\n      position: absolute;\n      right: -0.5em;\n      top: -0.333333333333333em;\n      z-index: 1; }\n  \n  .video-js .vjs-load-progress {\n    background: #bfc7d3;\n    background: rgba(115, 133, 159, 0.5); }\n  \n  .video-js .vjs-load-progress div {\n    background: white;\n    background: rgba(115, 133, 159, 0.75); }\n  \n  .video-js .vjs-time-tooltip {\n    background-color: #fff;\n    background-color: rgba(255, 255, 255, 0.8);\n    -webkit-border-radius: 0.3em;\n    -moz-border-radius: 0.3em;\n    border-radius: 0.3em;\n    color: #000;\n    float: right;\n    font-family: Arial, Helvetica, sans-serif;\n    font-size: 1em;\n    padding: 6px 8px 8px 8px;\n    pointer-events: none;\n    position: relative;\n    top: -3.4em;\n    visibility: hidden;\n    z-index: 1; }\n  \n  .video-js .vjs-progress-holder:focus .vjs-time-tooltip {\n    display: none; }\n  \n  .video-js .vjs-progress-control:hover .vjs-time-tooltip,\n  .video-js .vjs-progress-control:hover .vjs-progress-holder:focus .vjs-time-tooltip {\n    display: block;\n    font-size: 0.6em;\n    visibility: visible; }\n  \n  .video-js .vjs-progress-control .vjs-mouse-display {\n    display: none;\n    position: absolute;\n    width: 1px;\n    height: 100%;\n    background-color: #000;\n    z-index: 1; }\n  \n  .vjs-no-flex .vjs-progress-control .vjs-mouse-display {\n    z-index: 0; }\n  \n  .video-js .vjs-progress-control:hover .vjs-mouse-display {\n    display: block; }\n  \n  .video-js.vjs-user-inactive .vjs-progress-control .vjs-mouse-display {\n    visibility: hidden;\n    opacity: 0;\n    -webkit-transition: visibility 1s, opacity 1s;\n    -moz-transition: visibility 1s, opacity 1s;\n    -ms-transition: visibility 1s, opacity 1s;\n    -o-transition: visibility 1s, opacity 1s;\n    transition: visibility 1s, opacity 1s; }\n  \n  .video-js.vjs-user-inactive.vjs-no-flex .vjs-progress-control .vjs-mouse-display {\n    display: none; }\n  \n  .vjs-mouse-display .vjs-time-tooltip {\n    color: #fff;\n    background-color: #000;\n    background-color: rgba(0, 0, 0, 0.8); }\n  \n  .video-js .vjs-slider {\n    position: relative;\n    cursor: pointer;\n    padding: 0;\n    margin: 0 0.45em 0 0.45em;\n    -webkit-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    user-select: none;\n    background-color: #73859f;\n    background-color: rgba(115, 133, 159, 0.5); }\n  \n  .video-js .vjs-slider:focus {\n    text-shadow: 0em 0em 1em white;\n    -webkit-box-shadow: 0 0 1em #fff;\n    -moz-box-shadow: 0 0 1em #fff;\n    box-shadow: 0 0 1em #fff; }\n  \n  .video-js .vjs-mute-control {\n    cursor: pointer;\n    -webkit-box-flex: none;\n    -moz-box-flex: none;\n    -webkit-flex: none;\n    -ms-flex: none;\n    flex: none;\n    padding-left: 2em;\n    padding-right: 2em;\n    padding-bottom: 3em; }\n  \n  .video-js .vjs-volume-control {\n    cursor: pointer;\n    margin-right: 1em;\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex; }\n  \n  .video-js .vjs-volume-control.vjs-volume-horizontal {\n    width: 5em; }\n  \n  .video-js .vjs-volume-panel .vjs-volume-control {\n    visibility: visible;\n    opacity: 0;\n    width: 1px;\n    height: 1px;\n    margin-left: -1px; }\n  \n  .vjs-no-flex .vjs-volume-panel .vjs-volume-control.vjs-volume-vertical {\n    -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)\"; }\n    .vjs-no-flex .vjs-volume-panel .vjs-volume-control.vjs-volume-vertical .vjs-volume-bar,\n    .vjs-no-flex .vjs-volume-panel .vjs-volume-control.vjs-volume-vertical .vjs-volume-level {\n      -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)\"; }\n  \n  .video-js .vjs-volume-panel {\n    -webkit-transition: width 1s;\n    -moz-transition: width 1s;\n    -ms-transition: width 1s;\n    -o-transition: width 1s;\n    transition: width 1s; }\n    .video-js .vjs-volume-panel:hover .vjs-volume-control,\n    .video-js .vjs-volume-panel:active .vjs-volume-control,\n    .video-js .vjs-volume-panel:focus .vjs-volume-control,\n    .video-js .vjs-volume-panel .vjs-volume-control:hover,\n    .video-js .vjs-volume-panel .vjs-volume-control:active,\n    .video-js .vjs-volume-panel .vjs-volume-control:focus,\n    .video-js .vjs-volume-panel .vjs-mute-control:hover ~ .vjs-volume-control,\n    .video-js .vjs-volume-panel .vjs-mute-control:active ~ .vjs-volume-control,\n    .video-js .vjs-volume-panel .vjs-mute-control:focus ~ .vjs-volume-control,\n    .video-js .vjs-volume-panel .vjs-volume-control.vjs-slider-active {\n      visibility: visible;\n      opacity: 1;\n      position: relative;\n      -webkit-transition: visibility 0.1s, opacity 0.1s, height 0.1s, width 0.1s, left 0s, top 0s;\n      -moz-transition: visibility 0.1s, opacity 0.1s, height 0.1s, width 0.1s, left 0s, top 0s;\n      -ms-transition: visibility 0.1s, opacity 0.1s, height 0.1s, width 0.1s, left 0s, top 0s;\n      -o-transition: visibility 0.1s, opacity 0.1s, height 0.1s, width 0.1s, left 0s, top 0s;\n      transition: visibility 0.1s, opacity 0.1s, height 0.1s, width 0.1s, left 0s, top 0s; }\n      .video-js .vjs-volume-panel:hover .vjs-volume-control.vjs-volume-horizontal,\n      .video-js .vjs-volume-panel:active .vjs-volume-control.vjs-volume-horizontal,\n      .video-js .vjs-volume-panel:focus .vjs-volume-control.vjs-volume-horizontal,\n      .video-js .vjs-volume-panel .vjs-volume-control:hover.vjs-volume-horizontal,\n      .video-js .vjs-volume-panel .vjs-volume-control:active.vjs-volume-horizontal,\n      .video-js .vjs-volume-panel .vjs-volume-control:focus.vjs-volume-horizontal,\n      .video-js .vjs-volume-panel .vjs-mute-control:hover ~ .vjs-volume-control.vjs-volume-horizontal,\n      .video-js .vjs-volume-panel .vjs-mute-control:active ~ .vjs-volume-control.vjs-volume-horizontal,\n      .video-js .vjs-volume-panel .vjs-mute-control:focus ~ .vjs-volume-control.vjs-volume-horizontal,\n      .video-js .vjs-volume-panel .vjs-volume-control.vjs-slider-active.vjs-volume-horizontal {\n        width: 5em;\n        height: 3em; }\n      .video-js .vjs-volume-panel:hover .vjs-volume-control.vjs-volume-vertical,\n      .video-js .vjs-volume-panel:active .vjs-volume-control.vjs-volume-vertical,\n      .video-js .vjs-volume-panel:focus .vjs-volume-control.vjs-volume-vertical,\n      .video-js .vjs-volume-panel .vjs-volume-control:hover.vjs-volume-vertical,\n      .video-js .vjs-volume-panel .vjs-volume-control:active.vjs-volume-vertical,\n      .video-js .vjs-volume-panel .vjs-volume-control:focus.vjs-volume-vertical,\n      .video-js .vjs-volume-panel .vjs-mute-control:hover ~ .vjs-volume-control.vjs-volume-vertical,\n      .video-js .vjs-volume-panel .vjs-mute-control:active ~ .vjs-volume-control.vjs-volume-vertical,\n      .video-js .vjs-volume-panel .vjs-mute-control:focus ~ .vjs-volume-control.vjs-volume-vertical,\n      .video-js .vjs-volume-panel .vjs-volume-control.vjs-slider-active.vjs-volume-vertical {\n        -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)\"; }\n        .video-js .vjs-volume-panel:hover .vjs-volume-control.vjs-volume-vertical .vjs-volume-bar,\n        .video-js .vjs-volume-panel:hover .vjs-volume-control.vjs-volume-vertical .vjs-volume-level,\n        .video-js .vjs-volume-panel:active .vjs-volume-control.vjs-volume-vertical .vjs-volume-bar,\n        .video-js .vjs-volume-panel:active .vjs-volume-control.vjs-volume-vertical .vjs-volume-level,\n        .video-js .vjs-volume-panel:focus .vjs-volume-control.vjs-volume-vertical .vjs-volume-bar,\n        .video-js .vjs-volume-panel:focus .vjs-volume-control.vjs-volume-vertical .vjs-volume-level,\n        .video-js .vjs-volume-panel .vjs-volume-control:hover.vjs-volume-vertical .vjs-volume-bar,\n        .video-js .vjs-volume-panel .vjs-volume-control:hover.vjs-volume-vertical .vjs-volume-level,\n        .video-js .vjs-volume-panel .vjs-volume-control:active.vjs-volume-vertical .vjs-volume-bar,\n        .video-js .vjs-volume-panel .vjs-volume-control:active.vjs-volume-vertical .vjs-volume-level,\n        .video-js .vjs-volume-panel .vjs-volume-control:focus.vjs-volume-vertical .vjs-volume-bar,\n        .video-js .vjs-volume-panel .vjs-volume-control:focus.vjs-volume-vertical .vjs-volume-level,\n        .video-js .vjs-volume-panel .vjs-mute-control:hover ~ .vjs-volume-control.vjs-volume-vertical .vjs-volume-bar,\n        .video-js .vjs-volume-panel .vjs-mute-control:hover ~ .vjs-volume-control.vjs-volume-vertical .vjs-volume-level,\n        .video-js .vjs-volume-panel .vjs-mute-control:active ~ .vjs-volume-control.vjs-volume-vertical .vjs-volume-bar,\n        .video-js .vjs-volume-panel .vjs-mute-control:active ~ .vjs-volume-control.vjs-volume-vertical .vjs-volume-level,\n        .video-js .vjs-volume-panel .vjs-mute-control:focus ~ .vjs-volume-control.vjs-volume-vertical .vjs-volume-bar,\n        .video-js .vjs-volume-panel .vjs-mute-control:focus ~ .vjs-volume-control.vjs-volume-vertical .vjs-volume-level,\n        .video-js .vjs-volume-panel .vjs-volume-control.vjs-slider-active.vjs-volume-vertical .vjs-volume-bar,\n        .video-js .vjs-volume-panel .vjs-volume-control.vjs-slider-active.vjs-volume-vertical .vjs-volume-level {\n          -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)\"; }\n    .video-js .vjs-volume-panel.vjs-volume-panel-horizontal:hover, .video-js .vjs-volume-panel.vjs-volume-panel-horizontal:focus, .video-js .vjs-volume-panel.vjs-volume-panel-horizontal:active, .video-js .vjs-volume-panel.vjs-volume-panel-horizontal.vjs-slider-active {\n      width: 9em;\n      -webkit-transition: width 0.1s;\n      -moz-transition: width 0.1s;\n      -ms-transition: width 0.1s;\n      -o-transition: width 0.1s;\n      transition: width 0.1s; }\n  \n  .video-js .vjs-volume-panel .vjs-volume-control.vjs-volume-vertical {\n    height: 8em;\n    width: 3em;\n    left: -3.5em;\n    -webkit-transition: visibility 1s, opacity 1s, height 1s 1s, width 1s 1s, left 1s 1s, top 1s 1s;\n    -moz-transition: visibility 1s, opacity 1s, height 1s 1s, width 1s 1s, left 1s 1s, top 1s 1s;\n    -ms-transition: visibility 1s, opacity 1s, height 1s 1s, width 1s 1s, left 1s 1s, top 1s 1s;\n    -o-transition: visibility 1s, opacity 1s, height 1s 1s, width 1s 1s, left 1s 1s, top 1s 1s;\n    transition: visibility 1s, opacity 1s, height 1s 1s, width 1s 1s, left 1s 1s, top 1s 1s; }\n  \n  .video-js .vjs-volume-panel .vjs-volume-control.vjs-volume-horizontal {\n    -webkit-transition: visibility 1s, opacity 1s, height 1s 1s, width 1s, left 1s 1s, top 1s 1s;\n    -moz-transition: visibility 1s, opacity 1s, height 1s 1s, width 1s, left 1s 1s, top 1s 1s;\n    -ms-transition: visibility 1s, opacity 1s, height 1s 1s, width 1s, left 1s 1s, top 1s 1s;\n    -o-transition: visibility 1s, opacity 1s, height 1s 1s, width 1s, left 1s 1s, top 1s 1s;\n    transition: visibility 1s, opacity 1s, height 1s 1s, width 1s, left 1s 1s, top 1s 1s; }\n  \n  .video-js.vjs-no-flex .vjs-volume-panel .vjs-volume-control.vjs-volume-horizontal {\n    width: 5em;\n    height: 3em;\n    visibility: visible;\n    opacity: 1;\n    position: relative;\n    -webkit-transition: none;\n    -moz-transition: none;\n    -ms-transition: none;\n    -o-transition: none;\n    transition: none; }\n  \n  .video-js.vjs-no-flex .vjs-volume-control.vjs-volume-vertical,\n  .video-js.vjs-no-flex .vjs-volume-panel .vjs-volume-control.vjs-volume-vertical {\n    position: absolute;\n    bottom: 3em;\n    left: 0.5em; }\n  \n  .video-js .vjs-volume-panel {\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex; }\n  \n  .video-js .vjs-volume-bar {\n    margin: 1.35em 0.45em; }\n  \n  .vjs-volume-bar.vjs-slider-horizontal {\n    width: 5em;\n    height: 0.3em; }\n  \n  .vjs-volume-bar.vjs-slider-vertical {\n    width: 0.3em;\n    height: 5em;\n    margin: 1.35em auto; }\n  \n  .video-js .vjs-volume-level {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    background-color: #fff; }\n    .video-js .vjs-volume-level:before {\n      position: absolute;\n      font-size: 0.9em; }\n  \n  .vjs-slider-vertical .vjs-volume-level {\n    width: 0.3em; }\n    .vjs-slider-vertical .vjs-volume-level:before {\n      top: -0.5em;\n      left: -0.3em; }\n  \n  .vjs-slider-horizontal .vjs-volume-level {\n    height: 0.3em; }\n    .vjs-slider-horizontal .vjs-volume-level:before {\n      top: -0.3em;\n      right: -0.5em; }\n  \n  .video-js .vjs-volume-panel.vjs-volume-panel-vertical {\n    width: 4em; }\n  \n  .vjs-volume-bar.vjs-slider-vertical .vjs-volume-level {\n    height: 100%; }\n  \n  .vjs-volume-bar.vjs-slider-horizontal .vjs-volume-level {\n    width: 100%; }\n  \n  .video-js .vjs-volume-vertical {\n    width: 3em;\n    height: 8em;\n    bottom: 8em;\n    background-color: #2B333F;\n    background-color: rgba(43, 51, 63, 0.7); }\n  \n  .video-js .vjs-volume-horizontal .vjs-menu {\n    left: -2em; }\n  \n  .vjs-poster {\n    display: inline-block;\n    vertical-align: middle;\n    background-repeat: no-repeat;\n    background-position: 50% 50%;\n    background-size: contain;\n    background-color: #000000;\n    cursor: pointer;\n    margin: 0;\n    padding: 0;\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0;\n    height: 100%; }\n  \n  .vjs-poster img {\n    display: block;\n    vertical-align: middle;\n    margin: 0 auto;\n    max-height: 100%;\n    padding: 0;\n    width: 100%; }\n  \n  .vjs-has-started .vjs-poster {\n    display: none; }\n  \n  .vjs-audio.vjs-has-started .vjs-poster {\n    display: block; }\n  \n  .vjs-using-native-controls .vjs-poster {\n    display: none; }\n  \n  .video-js .vjs-live-control {\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: flex-start;\n    -webkit-align-items: flex-start;\n    -ms-flex-align: flex-start;\n    align-items: flex-start;\n    -webkit-box-flex: auto;\n    -moz-box-flex: auto;\n    -webkit-flex: auto;\n    -ms-flex: auto;\n    flex: auto;\n    font-size: 1em;\n    line-height: 3em; }\n  \n  .vjs-no-flex .vjs-live-control {\n    display: table-cell;\n    width: auto;\n    text-align: left; }\n  \n  .video-js .vjs-time-control {\n    -webkit-box-flex: none;\n    -moz-box-flex: none;\n    -webkit-flex: none;\n    -ms-flex: none;\n    flex: none;\n    font-size: 1em;\n    line-height: 3em;\n    min-width: 2em;\n    width: auto;\n    padding-left: 1em;\n    padding-right: 1em; }\n  \n  .vjs-live .vjs-time-control {\n    display: none; }\n  \n  .video-js .vjs-current-time,\n  .vjs-no-flex .vjs-current-time {\n    display: none; }\n  \n  .vjs-no-flex .vjs-remaining-time.vjs-time-control.vjs-control {\n    width: 0px !important;\n    white-space: nowrap; }\n  \n  .video-js .vjs-duration,\n  .vjs-no-flex .vjs-duration {\n    display: none; }\n  \n  .vjs-time-divider {\n    display: none;\n    line-height: 3em; }\n  \n  .vjs-live .vjs-time-divider {\n    display: none; }\n  \n  .video-js .vjs-play-control .vjs-icon-placeholder {\n    cursor: pointer;\n    -webkit-box-flex: none;\n    -moz-box-flex: none;\n    -webkit-flex: none;\n    -ms-flex: none;\n    flex: none; }\n  \n  .vjs-text-track-display {\n    position: absolute;\n    bottom: 3em;\n    left: 0;\n    right: 0;\n    top: 0;\n    pointer-events: none; }\n  \n  .video-js.vjs-user-inactive.vjs-playing .vjs-text-track-display {\n    bottom: 1em; }\n  \n  .video-js .vjs-text-track {\n    font-size: 1.4em;\n    text-align: center;\n    margin-bottom: 0.1em;\n    background-color: #000;\n    background-color: rgba(0, 0, 0, 0.5); }\n  \n  .vjs-subtitles {\n    color: #fff; }\n  \n  .vjs-captions {\n    color: #fc6; }\n  \n  .vjs-tt-cue {\n    display: block; }\n  \n  video::-webkit-media-text-track-display {\n    -moz-transform: translateY(-3em);\n    -ms-transform: translateY(-3em);\n    -o-transform: translateY(-3em);\n    -webkit-transform: translateY(-3em);\n    transform: translateY(-3em); }\n  \n  .video-js.vjs-user-inactive.vjs-playing video::-webkit-media-text-track-display {\n    -moz-transform: translateY(-1.5em);\n    -ms-transform: translateY(-1.5em);\n    -o-transform: translateY(-1.5em);\n    -webkit-transform: translateY(-1.5em);\n    transform: translateY(-1.5em); }\n  \n  .video-js .vjs-fullscreen-control {\n    cursor: pointer;\n    -webkit-box-flex: none;\n    -moz-box-flex: none;\n    -webkit-flex: none;\n    -ms-flex: none;\n    flex: none; }\n  \n  .vjs-playback-rate > .vjs-menu-button,\n  .vjs-playback-rate .vjs-playback-rate-value {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%; }\n  \n  .vjs-playback-rate .vjs-playback-rate-value {\n    pointer-events: none;\n    font-size: 1.5em;\n    line-height: 2;\n    text-align: center; }\n  \n  .vjs-playback-rate .vjs-menu {\n    width: 4em;\n    left: 0em; }\n  \n  .vjs-error .vjs-error-display .vjs-modal-dialog-content {\n    font-size: 1.4em;\n    text-align: center; }\n  \n  .vjs-error .vjs-error-display:before {\n    color: #fff;\n    content: 'X';\n    font-family: Arial, Helvetica, sans-serif;\n    font-size: 4em;\n    left: 0;\n    line-height: 1;\n    margin-top: -0.5em;\n    position: absolute;\n    text-shadow: 0.05em 0.05em 0.1em #000;\n    text-align: center;\n    top: 50%;\n    vertical-align: middle;\n    width: 100%; }\n  \n  .vjs-loading-spinner {\n    display: none;\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    margin: -25px 0 0 -25px;\n    opacity: 0.85;\n    text-align: left;\n    border: 6px solid rgba(43, 51, 63, 0.7);\n    box-sizing: border-box;\n    background-clip: padding-box;\n    width: 50px;\n    height: 50px;\n    border-radius: 25px; }\n  \n  .vjs-seeking .vjs-loading-spinner,\n  .vjs-waiting .vjs-loading-spinner {\n    display: block; }\n  \n  .vjs-loading-spinner:before,\n  .vjs-loading-spinner:after {\n    content: \"\";\n    position: absolute;\n    margin: -6px;\n    box-sizing: inherit;\n    width: inherit;\n    height: inherit;\n    border-radius: inherit;\n    opacity: 1;\n    border: inherit;\n    border-color: transparent;\n    border-top-color: white; }\n  \n  .vjs-seeking .vjs-loading-spinner:before,\n  .vjs-seeking .vjs-loading-spinner:after,\n  .vjs-waiting .vjs-loading-spinner:before,\n  .vjs-waiting .vjs-loading-spinner:after {\n    -webkit-animation: vjs-spinner-spin 1.1s cubic-bezier(0.6, 0.2, 0, 0.8) infinite, vjs-spinner-fade 1.1s linear infinite;\n    animation: vjs-spinner-spin 1.1s cubic-bezier(0.6, 0.2, 0, 0.8) infinite, vjs-spinner-fade 1.1s linear infinite; }\n  \n  .vjs-seeking .vjs-loading-spinner:before,\n  .vjs-waiting .vjs-loading-spinner:before {\n    border-top-color: white; }\n  \n  .vjs-seeking .vjs-loading-spinner:after,\n  .vjs-waiting .vjs-loading-spinner:after {\n    border-top-color: white;\n    -webkit-animation-delay: 0.44s;\n    animation-delay: 0.44s; }\n  \n  @keyframes vjs-spinner-spin {\n    100% {\n      transform: rotate(360deg); } }\n  \n  @-webkit-keyframes vjs-spinner-spin {\n    100% {\n      -webkit-transform: rotate(360deg); } }\n  \n  @keyframes vjs-spinner-fade {\n    0% {\n      border-top-color: #73859f; }\n    20% {\n      border-top-color: #73859f; }\n    35% {\n      border-top-color: white; }\n    60% {\n      border-top-color: #73859f; }\n    100% {\n      border-top-color: #73859f; } }\n  \n  @-webkit-keyframes vjs-spinner-fade {\n    0% {\n      border-top-color: #73859f; }\n    20% {\n      border-top-color: #73859f; }\n    35% {\n      border-top-color: white; }\n    60% {\n      border-top-color: #73859f; }\n    100% {\n      border-top-color: #73859f; } }\n  \n  .vjs-chapters-button .vjs-menu ul {\n    width: 24em; }\n  \n  .video-js .vjs-subs-caps-button + .vjs-menu .vjs-captions-menu-item .vjs-menu-item-text .vjs-icon-placeholder {\n    position: absolute; }\n  \n  .video-js .vjs-subs-caps-button + .vjs-menu .vjs-captions-menu-item .vjs-menu-item-text .vjs-icon-placeholder:before {\n    font-family: VideoJS;\n    content: \"\\f10d\";\n    font-size: 1.5em;\n    line-height: inherit; }\n  \n  .video-js.vjs-layout-tiny:not(.vjs-fullscreen) .vjs-custom-control-spacer {\n    -webkit-box-flex: auto;\n    -moz-box-flex: auto;\n    -webkit-flex: auto;\n    -ms-flex: auto;\n    flex: auto; }\n  \n  .video-js.vjs-layout-tiny:not(.vjs-fullscreen).vjs-no-flex .vjs-custom-control-spacer {\n    width: auto; }\n  \n  .video-js.vjs-layout-tiny:not(.vjs-fullscreen) .vjs-current-time, .video-js.vjs-layout-tiny:not(.vjs-fullscreen) .vjs-time-divider, .video-js.vjs-layout-tiny:not(.vjs-fullscreen) .vjs-duration, .video-js.vjs-layout-tiny:not(.vjs-fullscreen) .vjs-remaining-time,\n  .video-js.vjs-layout-tiny:not(.vjs-fullscreen) .vjs-playback-rate, .video-js.vjs-layout-tiny:not(.vjs-fullscreen) .vjs-progress-control,\n  .video-js.vjs-layout-tiny:not(.vjs-fullscreen) .vjs-mute-control, .video-js.vjs-layout-tiny:not(.vjs-fullscreen) .vjs-volume-control,\n  .video-js.vjs-layout-tiny:not(.vjs-fullscreen) .vjs-chapters-button, .video-js.vjs-layout-tiny:not(.vjs-fullscreen) .vjs-descriptions-button, .video-js.vjs-layout-tiny:not(.vjs-fullscreen) .vjs-captions-button,\n  .video-js.vjs-layout-tiny:not(.vjs-fullscreen) .vjs-subtitles-button, .video-js.vjs-layout-tiny:not(.vjs-fullscreen) .vjs-audio-button {\n    display: none; }\n  \n  .video-js.vjs-layout-x-small:not(.vjs-fullscreen) .vjs-current-time, .video-js.vjs-layout-x-small:not(.vjs-fullscreen) .vjs-time-divider, .video-js.vjs-layout-x-small:not(.vjs-fullscreen) .vjs-duration, .video-js.vjs-layout-x-small:not(.vjs-fullscreen) .vjs-remaining-time,\n  .video-js.vjs-layout-x-small:not(.vjs-fullscreen) .vjs-playback-rate,\n  .video-js.vjs-layout-x-small:not(.vjs-fullscreen) .vjs-mute-control, .video-js.vjs-layout-x-small:not(.vjs-fullscreen) .vjs-volume-control,\n  .video-js.vjs-layout-x-small:not(.vjs-fullscreen) .vjs-chapters-button, .video-js.vjs-layout-x-small:not(.vjs-fullscreen) .vjs-descriptions-button, .video-js.vjs-layout-x-small:not(.vjs-fullscreen) .vjs-captions-button,\n  .video-js.vjs-layout-x-small:not(.vjs-fullscreen) .vjs-subtitles-button, .video-js.vjs-layout-x-small:not(.vjs-fullscreen) .vjs-audio-button {\n    display: none; }\n  \n  .video-js.vjs-layout-small:not(.vjs-fullscreen) .vjs-current-time, .video-js.vjs-layout-small:not(.vjs-fullscreen) .vjs-time-divider, .video-js.vjs-layout-small:not(.vjs-fullscreen) .vjs-duration, .video-js.vjs-layout-small:not(.vjs-fullscreen) .vjs-remaining-time,\n  .video-js.vjs-layout-small:not(.vjs-fullscreen) .vjs-playback-rate,\n  .video-js.vjs-layout-small:not(.vjs-fullscreen) .vjs-mute-control, .video-js.vjs-layout-small:not(.vjs-fullscreen) .vjs-volume-control,\n  .video-js.vjs-layout-small:not(.vjs-fullscreen) .vjs-chapters-button, .video-js.vjs-layout-small:not(.vjs-fullscreen) .vjs-descriptions-button, .video-js.vjs-layout-small:not(.vjs-fullscreen) .vjs-captions-button,\n  .video-js.vjs-layout-small:not(.vjs-fullscreen) .vjs-subtitles-button .vjs-audio-button {\n    display: none; }\n  \n  .vjs-modal-dialog.vjs-text-track-settings {\n    background-color: #2B333F;\n    background-color: rgba(43, 51, 63, 0.75);\n    color: #fff;\n    height: 70%; }\n  \n  .vjs-text-track-settings .vjs-modal-dialog-content {\n    display: table; }\n  \n  .vjs-text-track-settings .vjs-track-settings-colors,\n  .vjs-text-track-settings .vjs-track-settings-font,\n  .vjs-text-track-settings .vjs-track-settings-controls {\n    display: table-cell; }\n  \n  .vjs-text-track-settings .vjs-track-settings-controls {\n    text-align: right;\n    vertical-align: bottom; }\n  \n  .vjs-text-track-settings fieldset {\n    margin: 5px;\n    padding: 3px;\n    border: none; }\n  \n  .vjs-text-track-settings fieldset span {\n    display: inline-block;\n    margin-left: 5px; }\n  \n  .vjs-text-track-settings legend {\n    color: #fff;\n    margin: 0 0 5px 0; }\n  \n  .vjs-text-track-settings .vjs-label {\n    position: absolute;\n    clip: rect(1px 1px 1px 1px);\n    clip: rect(1px, 1px, 1px, 1px);\n    display: block;\n    margin: 0 0 5px 0;\n    padding: 0;\n    border: 0;\n    height: 1px;\n    width: 1px;\n    overflow: hidden; }\n  \n  .vjs-track-settings-controls button:focus,\n  .vjs-track-settings-controls button:active {\n    outline-style: solid;\n    outline-width: medium;\n    background-image: linear-gradient(0deg, #fff 88%, #73859f 100%); }\n  \n  .vjs-track-settings-controls button:hover {\n    color: rgba(43, 51, 63, 0.75); }\n  \n  .vjs-track-settings-controls button {\n    background-color: #fff;\n    background-image: linear-gradient(-180deg, #fff 88%, #73859f 100%);\n    color: #2B333F;\n    cursor: pointer;\n    border-radius: 2px; }\n  \n  .vjs-track-settings-controls .vjs-default-button {\n    margin-right: 1em; }\n  \n  @media print {\n    .video-js > *:not(.vjs-tech):not(.vjs-poster) {\n      visibility: hidden; } }\n  \n  @media \\0screen {\n    .vjs-user-inactive.vjs-playing .vjs-control-bar :before {\n      content: \"\";\n    }\n  }\n  \n  @media \\0screen {\n    .vjs-has-started.vjs-user-inactive.vjs-playing .vjs-control-bar {\n      visibility: hidden;\n    }\n  }";
-inject(css, undefined, '_18si2jq');
+inject(css, undefined, '_1lnlc4n');
 module.exports = css;
 
 },{"./../node_modules/cssify":10}],2:[function(require,module,exports){
@@ -9,23 +9,166 @@ module.exports = css;
 Object.defineProperty(exports, "__esModule", { value: true });
 var index_1 = require("./index");
 var videojscss = require('./css/videojs.css');
-window['drawPlayer'] = index_1.drawPlayer;
+window['drawHLSPlayer'] = index_1.drawHLSPlayer;
+window['drawFLASHPlayer'] = index_1.drawFLASHPlayer;
+window['detectPlayer'] = index_1.detectPlayer;
+window['StreamPlayer'] = index_1.StreamPlayer;
+window['SPlayer'] = index_1.SPlayer;
 
 },{"./css/videojs.css":1,"./index":3}],3:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var videojs = require("video.js");
 var fileinfo = require("filenameinfo");
+var swfobject = require("swfobject");
 var contrib = require('videojs-contrib-hls');
-var defaultOptions = {
-    el: 'videojs'
-};
-function drawPlayer(options) {
+var defaultHtmlTag = 'videojs';
+var StreamPlayer = (function () {
+    function StreamPlayer(options) {
+        if (!options)
+            throw Error("no options provided");
+        this.conf = options;
+    }
+    StreamPlayer.prototype.drawHLS = function () {
+        var conf = this.conf;
+        if (conf && conf.hlsURI) {
+            var opt = {
+                uri: conf.hlsURI,
+                el: conf.el,
+                ratio43: conf.ratio43
+            };
+            return drawHLSPlayer(opt);
+        }
+        else {
+            throw Error("invalid conf for HLS");
+        }
+    };
+    StreamPlayer.prototype.drawPlayer = function () {
+        var that = this;
+        if (detectPlayer()) {
+            that.drawHLS();
+        }
+        else if (!that.conf.disableFallback) {
+            that.drawFLASH();
+        }
+        else {
+            console.log('no html5 browser');
+        }
+    };
+    StreamPlayer.prototype.drawFLASH = function () {
+        var conf = this.conf;
+        if (conf && conf.swfLib && conf.rtmpURI) {
+            var opt = {
+                uri: conf.rtmpURI,
+                swfLib: conf.swfLib,
+                el: conf.el,
+                ratio43: conf.ratio43
+            };
+            return drawFLASHPlayer(opt);
+        }
+        else {
+            throw Error("invalid conf for FLASH");
+        }
+    };
+    return StreamPlayer;
+}());
+exports.StreamPlayer = StreamPlayer;
+function SPlayer(options) {
+    if (!options || !options.channel || !options.hostname)
+        throw Error('invalid bplayer conf');
+    var config = {
+        swfLib: options.swfLib || './GrindPlayer.swf',
+        ratio43: options.ratio43,
+        el: options.el,
+        disableFallback: options.disableFallback
+    };
+    if (!options.hlsAppUri)
+        options.hlsAppUri = 'hls';
+    var hlsurl;
+    if (!options.hlsPort)
+        options.hlsPort = 443;
+    if (options.hlsPort === 443) {
+        hlsurl = 'https://' + options.hostname + '/' + options.hlsAppUri + '/' + options.channel + '.m3u8';
+    }
+    else if (options.hlsPort === 80) {
+        hlsurl = 'http://' + options.hostname + '/' + options.hlsAppUri + '/' + options.channel + '.m3u8';
+    }
+    else {
+        hlsurl = 'http://' + options.hostname + ':' + options.hlsPort + '/' + options.hlsAppUri + '/' + options.channel + '.m3u8';
+    }
+    config.hlsURI = hlsurl;
+    if (!options.rtmpAppUri)
+        options.rtmpAppUri = 'live';
+    config.rtmpURI = 'rtmp://' + options.hostname + ':' + options.rtmpPort + '/' + options.rtmpAppUri + '/' + options.channel;
+    var SP = new StreamPlayer(config);
+    SP.drawPlayer();
+}
+exports.SPlayer = SPlayer;
+function detectPlayer() {
+    var testEl = document.createElement("video");
+    if (testEl.canPlayType) {
+        if (testEl.canPlayType && testEl.canPlayType('video/mp4; codecs="avc1.42E01E"') && testEl.canPlayType('video/mp4; codecs="avc1.42E01E, mp4a.40.2"') && !(window.navigator.userAgent.indexOf('MSIE ') > -1) && !(window.navigator.userAgent.indexOf('Trident/') > -1)) {
+            return true;
+        }
+    }
+    return false;
+}
+exports.detectPlayer = detectPlayer;
+function drawFLASHPlayer(options) {
+    var flashvars = {
+        src: options.uri
+    };
+    var params = {
+        allowFullScreen: true,
+        allowScriptAccess: "always",
+        bgcolor: "#000000"
+    };
+    var attrs = {
+        name: "player"
+    };
+    var ratioH0;
+    var ratioV0;
+    if (options.ratio43) {
+        ratioH0 = 4;
+        ratioV0 = 3;
+    }
+    else {
+        ratioH0 = 16;
+        ratioV0 = 9;
+    }
+    var videodim;
+    if (window.innerHeight < window.innerWidth) {
+        videodim = ((document.getElementById(options.el).offsetWidth / ratioH0) * ratioV0) + 'px';
+        document.getElementById(options.el).style.height = videodim;
+    }
+    else {
+        videodim = ((document.getElementById(options.el).offsetWidth / ratioH0) * ratioV0) + 'px';
+        document.getElementById(options.el).style.width = '100%';
+        document.getElementById(options.el).style.height = videodim;
+    }
+    window.onresize = function (event) {
+        var videodim;
+        document.getElementById(options.el).style.width = '100%';
+        if (options && options.ratio43) {
+            videodim = ((document.getElementById(options.el)
+                .offsetWidth / 4) * 3) + 'px';
+        }
+        else {
+            videodim = ((document.getElementById(options.el)
+                .offsetWidth / 16) * 9) + 'px';
+        }
+        document.getElementById(options.el).style.height = videodim;
+        swfobject.embedSWF(options.swfLib, options.el, document.getElementById(options.el).offsetWidth, document.getElementById(options.el).offsetHeight, "10.2", null, flashvars, params, attrs);
+    };
+    swfobject.embedSWF(options.swfLib, options.el, document.getElementById(options.el).offsetWidth, document.getElementById(options.el).offsetHeight, "10.2", null, flashvars, params, attrs);
+}
+exports.drawFLASHPlayer = drawFLASHPlayer;
+function drawHLSPlayer(options) {
     console.log(options);
     if (!options.uri)
         throw Error('no uri specified');
     var opt = {
-        el: options.el || defaultOptions.el,
+        el: options.el || defaultHtmlTag,
         uri: options.uri
     };
     var videoid = opt.el + '_vid';
@@ -78,9 +221,9 @@ function drawPlayer(options) {
         document.getElementById(opt.el).style.height = (document.getElementById(opt.el).offsetWidth * player.videoHeight()) / player.videoWidth() + 'px';
     });
 }
-exports.drawPlayer = drawPlayer;
+exports.drawHLSPlayer = drawHLSPlayer;
 
-},{"filenameinfo":11,"video.js":54,"videojs-contrib-hls":73}],4:[function(require,module,exports){
+},{"filenameinfo":11,"swfobject":51,"video.js":55,"videojs-contrib-hls":74}],4:[function(require,module,exports){
 /**
  * @file aes.js
  *
@@ -9112,7 +9255,7 @@ module.exports = function (headers) {
 
   return result
 }
-},{"for-each":12,"trim":51}],47:[function(require,module,exports){
+},{"for-each":12,"trim":52}],47:[function(require,module,exports){
 /*
  * pkcs7.pad
  * https://github.com/brightcove/pkcs7
@@ -9250,6 +9393,12 @@ function SafeParseTuple(obj, reviver) {
 }
 
 },{}],51:[function(require,module,exports){
+/*	SWFObject v2.2 <http://code.google.com/p/swfobject/> 
+	is released under the MIT License <http://www.opensource.org/licenses/mit-license.php> 
+*/
+var swfobject=function(){var D="undefined",r="object",S="Shockwave Flash",W="ShockwaveFlash.ShockwaveFlash",q="application/x-shockwave-flash",R="SWFObjectExprInst",x="onreadystatechange",O=window,j=document,t=navigator,T=false,U=[h],o=[],N=[],I=[],l,Q,E,B,J=false,a=false,n,G,m=true,M=function(){var aa=typeof j.getElementById!=D&&typeof j.getElementsByTagName!=D&&typeof j.createElement!=D,ah=t.userAgent.toLowerCase(),Y=t.platform.toLowerCase(),ae=Y?/win/.test(Y):/win/.test(ah),ac=Y?/mac/.test(Y):/mac/.test(ah),af=/webkit/.test(ah)?parseFloat(ah.replace(/^.*webkit\/(\d+(\.\d+)?).*$/,"$1")):false,X=!+"\v1",ag=[0,0,0],ab=null;if(typeof t.plugins!=D&&typeof t.plugins[S]==r){ab=t.plugins[S].description;if(ab&&!(typeof t.mimeTypes!=D&&t.mimeTypes[q]&&!t.mimeTypes[q].enabledPlugin)){T=true;X=false;ab=ab.replace(/^.*\s+(\S+\s+\S+$)/,"$1");ag[0]=parseInt(ab.replace(/^(.*)\..*$/,"$1"),10);ag[1]=parseInt(ab.replace(/^.*\.(.*)\s.*$/,"$1"),10);ag[2]=/[a-zA-Z]/.test(ab)?parseInt(ab.replace(/^.*[a-zA-Z]+(.*)$/,"$1"),10):0}}else{if(typeof O[(['Active'].concat('Object').join('X'))]!=D){try{var ad=new window[(['Active'].concat('Object').join('X'))](W);if(ad){ab=ad.GetVariable("$version");if(ab){X=true;ab=ab.split(" ")[1].split(",");ag=[parseInt(ab[0],10),parseInt(ab[1],10),parseInt(ab[2],10)]}}}catch(Z){}}}return{w3:aa,pv:ag,wk:af,ie:X,win:ae,mac:ac}}(),k=function(){if(!M.w3){return}if((typeof j.readyState!=D&&j.readyState=="complete")||(typeof j.readyState==D&&(j.getElementsByTagName("body")[0]||j.body))){f()}if(!J){if(typeof j.addEventListener!=D){j.addEventListener("DOMContentLoaded",f,false)}if(M.ie&&M.win){j.attachEvent(x,function(){if(j.readyState=="complete"){j.detachEvent(x,arguments.callee);f()}});if(O==top){(function(){if(J){return}try{j.documentElement.doScroll("left")}catch(X){setTimeout(arguments.callee,0);return}f()})()}}if(M.wk){(function(){if(J){return}if(!/loaded|complete/.test(j.readyState)){setTimeout(arguments.callee,0);return}f()})()}s(f)}}();function f(){if(J){return}try{var Z=j.getElementsByTagName("body")[0].appendChild(C("span"));Z.parentNode.removeChild(Z)}catch(aa){return}J=true;var X=U.length;for(var Y=0;Y<X;Y++){U[Y]()}}function K(X){if(J){X()}else{U[U.length]=X}}function s(Y){if(typeof O.addEventListener!=D){O.addEventListener("load",Y,false)}else{if(typeof j.addEventListener!=D){j.addEventListener("load",Y,false)}else{if(typeof O.attachEvent!=D){i(O,"onload",Y)}else{if(typeof O.onload=="function"){var X=O.onload;O.onload=function(){X();Y()}}else{O.onload=Y}}}}}function h(){if(T){V()}else{H()}}function V(){var X=j.getElementsByTagName("body")[0];var aa=C(r);aa.setAttribute("type",q);var Z=X.appendChild(aa);if(Z){var Y=0;(function(){if(typeof Z.GetVariable!=D){var ab=Z.GetVariable("$version");if(ab){ab=ab.split(" ")[1].split(",");M.pv=[parseInt(ab[0],10),parseInt(ab[1],10),parseInt(ab[2],10)]}}else{if(Y<10){Y++;setTimeout(arguments.callee,10);return}}X.removeChild(aa);Z=null;H()})()}else{H()}}function H(){var ag=o.length;if(ag>0){for(var af=0;af<ag;af++){var Y=o[af].id;var ab=o[af].callbackFn;var aa={success:false,id:Y};if(M.pv[0]>0){var ae=c(Y);if(ae){if(F(o[af].swfVersion)&&!(M.wk&&M.wk<312)){w(Y,true);if(ab){aa.success=true;aa.ref=z(Y);ab(aa)}}else{if(o[af].expressInstall&&A()){var ai={};ai.data=o[af].expressInstall;ai.width=ae.getAttribute("width")||"0";ai.height=ae.getAttribute("height")||"0";if(ae.getAttribute("class")){ai.styleclass=ae.getAttribute("class")}if(ae.getAttribute("align")){ai.align=ae.getAttribute("align")}var ah={};var X=ae.getElementsByTagName("param");var ac=X.length;for(var ad=0;ad<ac;ad++){if(X[ad].getAttribute("name").toLowerCase()!="movie"){ah[X[ad].getAttribute("name")]=X[ad].getAttribute("value")}}P(ai,ah,Y,ab)}else{p(ae);if(ab){ab(aa)}}}}}else{w(Y,true);if(ab){var Z=z(Y);if(Z&&typeof Z.SetVariable!=D){aa.success=true;aa.ref=Z}ab(aa)}}}}}function z(aa){var X=null;var Y=c(aa);if(Y&&Y.nodeName=="OBJECT"){if(typeof Y.SetVariable!=D){X=Y}else{var Z=Y.getElementsByTagName(r)[0];if(Z){X=Z}}}return X}function A(){return !a&&F("6.0.65")&&(M.win||M.mac)&&!(M.wk&&M.wk<312)}function P(aa,ab,X,Z){a=true;E=Z||null;B={success:false,id:X};var ae=c(X);if(ae){if(ae.nodeName=="OBJECT"){l=g(ae);Q=null}else{l=ae;Q=X}aa.id=R;if(typeof aa.width==D||(!/%$/.test(aa.width)&&parseInt(aa.width,10)<310)){aa.width="310"}if(typeof aa.height==D||(!/%$/.test(aa.height)&&parseInt(aa.height,10)<137)){aa.height="137"}j.title=j.title.slice(0,47)+" - Flash Player Installation";var ad=M.ie&&M.win?(['Active'].concat('').join('X')):"PlugIn",ac="MMredirectURL="+O.location.toString().replace(/&/g,"%26")+"&MMplayerType="+ad+"&MMdoctitle="+j.title;if(typeof ab.flashvars!=D){ab.flashvars+="&"+ac}else{ab.flashvars=ac}if(M.ie&&M.win&&ae.readyState!=4){var Y=C("div");X+="SWFObjectNew";Y.setAttribute("id",X);ae.parentNode.insertBefore(Y,ae);ae.style.display="none";(function(){if(ae.readyState==4){ae.parentNode.removeChild(ae)}else{setTimeout(arguments.callee,10)}})()}u(aa,ab,X)}}function p(Y){if(M.ie&&M.win&&Y.readyState!=4){var X=C("div");Y.parentNode.insertBefore(X,Y);X.parentNode.replaceChild(g(Y),X);Y.style.display="none";(function(){if(Y.readyState==4){Y.parentNode.removeChild(Y)}else{setTimeout(arguments.callee,10)}})()}else{Y.parentNode.replaceChild(g(Y),Y)}}function g(ab){var aa=C("div");if(M.win&&M.ie){aa.innerHTML=ab.innerHTML}else{var Y=ab.getElementsByTagName(r)[0];if(Y){var ad=Y.childNodes;if(ad){var X=ad.length;for(var Z=0;Z<X;Z++){if(!(ad[Z].nodeType==1&&ad[Z].nodeName=="PARAM")&&!(ad[Z].nodeType==8)){aa.appendChild(ad[Z].cloneNode(true))}}}}}return aa}function u(ai,ag,Y){var X,aa=c(Y);if(M.wk&&M.wk<312){return X}if(aa){if(typeof ai.id==D){ai.id=Y}if(M.ie&&M.win){var ah="";for(var ae in ai){if(ai[ae]!=Object.prototype[ae]){if(ae.toLowerCase()=="data"){ag.movie=ai[ae]}else{if(ae.toLowerCase()=="styleclass"){ah+=' class="'+ai[ae]+'"'}else{if(ae.toLowerCase()!="classid"){ah+=" "+ae+'="'+ai[ae]+'"'}}}}}var af="";for(var ad in ag){if(ag[ad]!=Object.prototype[ad]){af+='<param name="'+ad+'" value="'+ag[ad]+'" />'}}aa.outerHTML='<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"'+ah+">"+af+"</object>";N[N.length]=ai.id;X=c(ai.id)}else{var Z=C(r);Z.setAttribute("type",q);for(var ac in ai){if(ai[ac]!=Object.prototype[ac]){if(ac.toLowerCase()=="styleclass"){Z.setAttribute("class",ai[ac])}else{if(ac.toLowerCase()!="classid"){Z.setAttribute(ac,ai[ac])}}}}for(var ab in ag){if(ag[ab]!=Object.prototype[ab]&&ab.toLowerCase()!="movie"){e(Z,ab,ag[ab])}}aa.parentNode.replaceChild(Z,aa);X=Z}}return X}function e(Z,X,Y){var aa=C("param");aa.setAttribute("name",X);aa.setAttribute("value",Y);Z.appendChild(aa)}function y(Y){var X=c(Y);if(X&&X.nodeName=="OBJECT"){if(M.ie&&M.win){X.style.display="none";(function(){if(X.readyState==4){b(Y)}else{setTimeout(arguments.callee,10)}})()}else{X.parentNode.removeChild(X)}}}function b(Z){var Y=c(Z);if(Y){for(var X in Y){if(typeof Y[X]=="function"){Y[X]=null}}Y.parentNode.removeChild(Y)}}function c(Z){var X=null;try{X=j.getElementById(Z)}catch(Y){}return X}function C(X){return j.createElement(X)}function i(Z,X,Y){Z.attachEvent(X,Y);I[I.length]=[Z,X,Y]}function F(Z){var Y=M.pv,X=Z.split(".");X[0]=parseInt(X[0],10);X[1]=parseInt(X[1],10)||0;X[2]=parseInt(X[2],10)||0;return(Y[0]>X[0]||(Y[0]==X[0]&&Y[1]>X[1])||(Y[0]==X[0]&&Y[1]==X[1]&&Y[2]>=X[2]))?true:false}function v(ac,Y,ad,ab){if(M.ie&&M.mac){return}var aa=j.getElementsByTagName("head")[0];if(!aa){return}var X=(ad&&typeof ad=="string")?ad:"screen";if(ab){n=null;G=null}if(!n||G!=X){var Z=C("style");Z.setAttribute("type","text/css");Z.setAttribute("media",X);n=aa.appendChild(Z);if(M.ie&&M.win&&typeof j.styleSheets!=D&&j.styleSheets.length>0){n=j.styleSheets[j.styleSheets.length-1]}G=X}if(M.ie&&M.win){if(n&&typeof n.addRule==r){n.addRule(ac,Y)}}else{if(n&&typeof j.createTextNode!=D){n.appendChild(j.createTextNode(ac+" {"+Y+"}"))}}}function w(Z,X){if(!m){return}var Y=X?"visible":"hidden";if(J&&c(Z)){c(Z).style.visibility=Y}else{v("#"+Z,"visibility:"+Y)}}function L(Y){var Z=/[\\\"<>\.;]/;var X=Z.exec(Y)!=null;return X&&typeof encodeURIComponent!=D?encodeURIComponent(Y):Y}var d=function(){if(M.ie&&M.win){window.attachEvent("onunload",function(){var ac=I.length;for(var ab=0;ab<ac;ab++){I[ab][0].detachEvent(I[ab][1],I[ab][2])}var Z=N.length;for(var aa=0;aa<Z;aa++){y(N[aa])}for(var Y in M){M[Y]=null}M=null;for(var X in swfobject){swfobject[X]=null}swfobject=null})}}();return{registerObject:function(ab,X,aa,Z){if(M.w3&&ab&&X){var Y={};Y.id=ab;Y.swfVersion=X;Y.expressInstall=aa;Y.callbackFn=Z;o[o.length]=Y;w(ab,false)}else{if(Z){Z({success:false,id:ab})}}},getObjectById:function(X){if(M.w3){return z(X)}},embedSWF:function(ab,ah,ae,ag,Y,aa,Z,ad,af,ac){var X={success:false,id:ah};if(M.w3&&!(M.wk&&M.wk<312)&&ab&&ah&&ae&&ag&&Y){w(ah,false);K(function(){ae+="";ag+="";var aj={};if(af&&typeof af===r){for(var al in af){aj[al]=af[al]}}aj.data=ab;aj.width=ae;aj.height=ag;var am={};if(ad&&typeof ad===r){for(var ak in ad){am[ak]=ad[ak]}}if(Z&&typeof Z===r){for(var ai in Z){if(typeof am.flashvars!=D){am.flashvars+="&"+ai+"="+Z[ai]}else{am.flashvars=ai+"="+Z[ai]}}}if(F(Y)){var an=u(aj,am,ah);if(aj.id==ah){w(ah,true)}X.success=true;X.ref=an}else{if(aa&&A()){aj.data=aa;P(aj,am,ah,ac);return}else{w(ah,true)}}if(ac){ac(X)}})}else{if(ac){ac(X)}}},switchOffAutoHideShow:function(){m=false},ua:M,getFlashPlayerVersion:function(){return{major:M.pv[0],minor:M.pv[1],release:M.pv[2]}},hasFlashPlayerVersion:F,createSWF:function(Z,Y,X){if(M.w3){return u(Z,Y,X)}else{return undefined}},showExpressInstall:function(Z,aa,X,Y){if(M.w3&&A()){P(Z,aa,X,Y)}},removeSWF:function(X){if(M.w3){y(X)}},createCSS:function(aa,Z,Y,X){if(M.w3){v(aa,Z,Y,X)}},addDomLoadEvent:K,addLoadEvent:s,getQueryParamValue:function(aa){var Z=j.location.search||j.location.hash;if(Z){if(/\?/.test(Z)){Z=Z.split("?")[1]}if(aa==null){return L(Z)}var Y=Z.split("&");for(var X=0;X<Y.length;X++){if(Y[X].substring(0,Y[X].indexOf("="))==aa){return L(Y[X].substring((Y[X].indexOf("=")+1)))}}}return""},expressInstallCallback:function(){if(a){var X=c(R);if(X&&l){X.parentNode.replaceChild(l,X);if(Q){w(Q,true);if(M.ie&&M.win){l.style.display="block"}}if(E){E(B)}}a=false}}}}();module.exports=swfobject;
+
+},{}],52:[function(require,module,exports){
 
 exports = module.exports = trim;
 
@@ -9265,7 +9414,7 @@ exports.right = function(str){
   return str.replace(/\s*$/, '');
 };
 
-},{}],52:[function(require,module,exports){
+},{}],53:[function(require,module,exports){
 function clean (s) {
   return s.replace(/\n\r?\s*/g, '')
 }
@@ -9280,7 +9429,7 @@ module.exports = function tsml (sa) {
 
   return s
 }
-},{}],53:[function(require,module,exports){
+},{}],54:[function(require,module,exports){
 /* jshint ignore:start */
 (function(root) { 
 /* jshint ignore:end */
@@ -9383,7 +9532,7 @@ module.exports = function tsml (sa) {
 })(this);
 /* jshint ignore:end */
 
-},{}],54:[function(require,module,exports){
+},{}],55:[function(require,module,exports){
 /**
  * @license
  * Video.js 6.2.7 <http://videojs.com/>
@@ -31956,7 +32105,7 @@ videojs.url = Url;
 
 module.exports = videojs;
 
-},{"global/document":13,"global/window":14,"safe-json-parse/tuple":50,"tsml":52,"videojs-vtt.js":185,"xhr":190}],55:[function(require,module,exports){
+},{"global/document":13,"global/window":14,"safe-json-parse/tuple":50,"tsml":53,"videojs-vtt.js":186,"xhr":191}],56:[function(require,module,exports){
 /**
  * @file ad-cue-tags.js
  */
@@ -32069,7 +32218,7 @@ exports['default'] = {
   findAdCue: findAdCue
 };
 module.exports = exports['default'];
-},{"global/window":14}],56:[function(require,module,exports){
+},{"global/window":14}],57:[function(require,module,exports){
 /**
  * @file bin-utils.js
  */
@@ -32186,7 +32335,7 @@ var utils = {
 
 exports['default'] = utils;
 module.exports = exports['default'];
-},{}],57:[function(require,module,exports){
+},{}],58:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32205,7 +32354,7 @@ exports["default"] = {
   BUFFER_LOW_WATER_LINE_RATE: 1
 };
 module.exports = exports["default"];
-},{}],58:[function(require,module,exports){
+},{}],59:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, '__esModule', {
@@ -32253,7 +32402,7 @@ exports['default'] = function (self) {
 };
 
 module.exports = exports['default'];
-},{"./bin-utils":56,"aes-decrypter":7,"global/window":14}],59:[function(require,module,exports){
+},{"./bin-utils":57,"aes-decrypter":7,"global/window":14}],60:[function(require,module,exports){
 /**
  * @file master-playlist-controller.js
  */
@@ -34085,7 +34234,7 @@ var MasterPlaylistController = (function (_videojs$EventTarget) {
 })(_videoJs2['default'].EventTarget);
 
 exports.MasterPlaylistController = MasterPlaylistController;
-},{"./ad-cue-tags":55,"./config":57,"./decrypter-worker":58,"./playlist-loader":62,"./ranges":65,"./segment-loader":69,"./sync-controller":71,"./util/codecs.js":72,"./vtt-segment-loader":74,"video.js":54,"videojs-contrib-media-sources/es5/codec-utils":78,"webworkify":189}],60:[function(require,module,exports){
+},{"./ad-cue-tags":56,"./config":58,"./decrypter-worker":59,"./playlist-loader":63,"./ranges":66,"./segment-loader":70,"./sync-controller":72,"./util/codecs.js":73,"./vtt-segment-loader":75,"video.js":55,"videojs-contrib-media-sources/es5/codec-utils":79,"webworkify":190}],61:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, '__esModule', {
@@ -34533,7 +34682,7 @@ var mediaSegmentRequest = function mediaSegmentRequest(xhr, xhrOptions, decrypti
   };
 };
 exports.mediaSegmentRequest = mediaSegmentRequest;
-},{"./bin-utils":56,"video.js":54}],61:[function(require,module,exports){
+},{"./bin-utils":57,"video.js":55}],62:[function(require,module,exports){
 /**
  * @file playback-watcher.js
  *
@@ -34970,7 +35119,7 @@ var PlaybackWatcher = (function () {
 
 exports['default'] = PlaybackWatcher;
 module.exports = exports['default'];
-},{"./ranges":65,"global/window":14,"video.js":54}],62:[function(require,module,exports){
+},{"./ranges":66,"global/window":14,"video.js":55}],63:[function(require,module,exports){
 /**
  * @file playlist-loader.js
  *
@@ -35557,7 +35706,7 @@ PlaylistLoader.prototype = new _videoJs.EventTarget();
 
 exports['default'] = PlaylistLoader;
 module.exports = exports['default'];
-},{"./playlist.js":64,"./resolve-url":68,"global/window":14,"m3u8-parser":16,"video.js":54}],63:[function(require,module,exports){
+},{"./playlist.js":65,"./resolve-url":69,"global/window":14,"m3u8-parser":16,"video.js":55}],64:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, '__esModule', {
@@ -35953,7 +36102,7 @@ var lowestBitrateCompatibleVariantSelector = function lowestBitrateCompatibleVar
   return playlistsWithVideo[0] || null;
 };
 exports.lowestBitrateCompatibleVariantSelector = lowestBitrateCompatibleVariantSelector;
-},{"./config":57,"./playlist":64,"./util/codecs.js":72}],64:[function(require,module,exports){
+},{"./config":58,"./playlist":65,"./util/codecs.js":73}],65:[function(require,module,exports){
 /**
  * @file playlist.js
  *
@@ -36464,7 +36613,7 @@ Playlist.estimateSegmentRequestTime = estimateSegmentRequestTime;
 
 // exports
 exports['default'] = Playlist;
-},{"global/window":14,"video.js":54}],65:[function(require,module,exports){
+},{"global/window":14,"video.js":55}],66:[function(require,module,exports){
 /**
  * ranges
  *
@@ -36837,7 +36986,7 @@ exports['default'] = {
   timeUntilRebuffer: timeUntilRebuffer
 };
 module.exports = exports['default'];
-},{"video.js":54}],66:[function(require,module,exports){
+},{"video.js":55}],67:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, '__esModule', {
@@ -36972,7 +37121,7 @@ var reloadSourceOnError = function reloadSourceOnError(options) {
 
 exports['default'] = reloadSourceOnError;
 module.exports = exports['default'];
-},{"video.js":54}],67:[function(require,module,exports){
+},{"video.js":55}],68:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, '__esModule', {
@@ -37079,7 +37228,7 @@ var renditionSelectionMixin = function renditionSelectionMixin(hlsHandler) {
 
 exports['default'] = renditionSelectionMixin;
 module.exports = exports['default'];
-},{"./playlist.js":64}],68:[function(require,module,exports){
+},{"./playlist.js":65}],69:[function(require,module,exports){
 /**
  * @file resolve-url.js
  */
@@ -37116,7 +37265,7 @@ var resolveUrl = function resolveUrl(baseURL, relativeURL) {
 
 exports['default'] = resolveUrl;
 module.exports = exports['default'];
-},{"global/window":14,"url-toolkit":53}],69:[function(require,module,exports){
+},{"global/window":14,"url-toolkit":54}],70:[function(require,module,exports){
 /**
  * @file segment-loader.js
  */
@@ -38440,7 +38589,7 @@ var SegmentLoader = (function (_videojs$EventTarget) {
 
 exports['default'] = SegmentLoader;
 module.exports = exports['default'];
-},{"./bin-utils":56,"./config":57,"./media-segment-request":60,"./playlist":64,"./playlist-selectors":63,"./ranges":65,"./source-updater":70,"global/window":14,"video.js":54,"videojs-contrib-media-sources/es5/remove-cues-from-track.js":85}],70:[function(require,module,exports){
+},{"./bin-utils":57,"./config":58,"./media-segment-request":61,"./playlist":65,"./playlist-selectors":64,"./ranges":66,"./source-updater":71,"global/window":14,"video.js":55,"videojs-contrib-media-sources/es5/remove-cues-from-track.js":86}],71:[function(require,module,exports){
 /**
  * @file source-updater.js
  */
@@ -38660,7 +38809,7 @@ var SourceUpdater = (function () {
 
 exports['default'] = SourceUpdater;
 module.exports = exports['default'];
-},{"video.js":54}],71:[function(require,module,exports){
+},{"video.js":55}],72:[function(require,module,exports){
 /**
  * @file sync-controller.js
  */
@@ -39244,7 +39393,7 @@ var SyncController = (function (_videojs$EventTarget) {
 })(_videoJs2['default'].EventTarget);
 
 exports['default'] = SyncController;
-},{"./playlist":64,"mux.js/lib/mp4/probe":40,"mux.js/lib/tools/ts-inspector.js":42,"video.js":54}],72:[function(require,module,exports){
+},{"./playlist":65,"mux.js/lib/mp4/probe":40,"mux.js/lib/tools/ts-inspector.js":42,"video.js":55}],73:[function(require,module,exports){
 
 /**
  * @file - codecs.js - Handles tasks regarding codec strings such as translating them to
@@ -39286,7 +39435,7 @@ var parseCodecs = function parseCodecs() {
   return result;
 };
 exports.parseCodecs = parseCodecs;
-},{}],73:[function(require,module,exports){
+},{}],74:[function(require,module,exports){
 /**
  * @file videojs-contrib-hls.js
  *
@@ -40030,7 +40179,7 @@ module.exports = {
   HlsHandler: HlsHandler,
   HlsSourceHandler: HlsSourceHandler
 };
-},{"./bin-utils":56,"./config":57,"./master-playlist-controller":59,"./playback-watcher":61,"./playlist":64,"./playlist-loader":62,"./playlist-selectors.js":63,"./reload-source-on-error":66,"./rendition-mixin":67,"./xhr":75,"aes-decrypter":7,"global/document":13,"global/window":14,"m3u8-parser":16,"video.js":54,"videojs-contrib-media-sources":87}],74:[function(require,module,exports){
+},{"./bin-utils":57,"./config":58,"./master-playlist-controller":60,"./playback-watcher":62,"./playlist":65,"./playlist-loader":63,"./playlist-selectors.js":64,"./reload-source-on-error":67,"./rendition-mixin":68,"./xhr":76,"aes-decrypter":7,"global/document":13,"global/window":14,"m3u8-parser":16,"video.js":55,"videojs-contrib-media-sources":88}],75:[function(require,module,exports){
 /**
  * @file vtt-segment-loader.js
  */
@@ -40484,7 +40633,7 @@ var VTTSegmentLoader = (function (_SegmentLoader) {
 
 exports['default'] = VTTSegmentLoader;
 module.exports = exports['default'];
-},{"./bin-utils":56,"./segment-loader":69,"global/window":14,"video.js":54,"videojs-contrib-media-sources/es5/remove-cues-from-track.js":85}],75:[function(require,module,exports){
+},{"./bin-utils":57,"./segment-loader":70,"global/window":14,"video.js":55,"videojs-contrib-media-sources/es5/remove-cues-from-track.js":86}],76:[function(require,module,exports){
 /**
  * @file xhr.js
  */
@@ -40571,7 +40720,7 @@ var xhrFactory = function xhrFactory() {
 
 exports['default'] = xhrFactory;
 module.exports = exports['default'];
-},{"video.js":54}],76:[function(require,module,exports){
+},{"video.js":55}],77:[function(require,module,exports){
 /**
  * @file add-text-track-data.js
  */
@@ -40722,7 +40871,7 @@ exports['default'] = {
   durationOfVideo: durationOfVideo
 };
 module.exports = exports['default'];
-},{"global/window":14,"video.js":181}],77:[function(require,module,exports){
+},{"global/window":14,"video.js":182}],78:[function(require,module,exports){
 /**
  * Remove the text track from the player if one with matching kind and
  * label properties already exists on the player
@@ -40770,7 +40919,7 @@ var cleanupTextTracks = function cleanupTextTracks(player) {
   removeExistingTrack(player, 'metadata', 'Timed Metadata');
 };
 exports.cleanupTextTracks = cleanupTextTracks;
-},{}],78:[function(require,module,exports){
+},{}],79:[function(require,module,exports){
 /**
  * @file codec-utils.js
  */
@@ -40858,7 +41007,7 @@ exports['default'] = {
   translateLegacyCodecs: translateLegacyCodecs
 };
 module.exports = exports['default'];
-},{}],79:[function(require,module,exports){
+},{}],80:[function(require,module,exports){
 /**
  * @file create-text-tracks-if-necessary.js
  */
@@ -40922,7 +41071,7 @@ var createTextTracksIfNecessary = function createTextTracksIfNecessary(sourceBuf
 
 exports['default'] = createTextTracksIfNecessary;
 module.exports = exports['default'];
-},{"./cleanup-text-tracks":77}],80:[function(require,module,exports){
+},{"./cleanup-text-tracks":78}],81:[function(require,module,exports){
 /**
  * @file flash-constants.js
  */
@@ -40949,7 +41098,7 @@ var flashConstants = {
 
 exports["default"] = flashConstants;
 module.exports = exports["default"];
-},{}],81:[function(require,module,exports){
+},{}],82:[function(require,module,exports){
 /**
  * @file flash-media-source.js
  */
@@ -41163,7 +41312,7 @@ for (var property in _flashConstants2['default']) {
   FlashMediaSource[property] = _flashConstants2['default'][property];
 }
 module.exports = exports['default'];
-},{"./cleanup-text-tracks":77,"./codec-utils":78,"./flash-constants":80,"./flash-source-buffer":82,"global/document":13,"video.js":181}],82:[function(require,module,exports){
+},{"./cleanup-text-tracks":78,"./codec-utils":79,"./flash-constants":81,"./flash-source-buffer":83,"global/document":13,"video.js":182}],83:[function(require,module,exports){
 /**
  * @file flash-source-buffer.js
  */
@@ -41781,7 +41930,7 @@ var FlashSourceBuffer = (function (_videojs$EventTarget) {
 
 exports['default'] = FlashSourceBuffer;
 module.exports = exports['default'];
-},{"./add-text-track-data":76,"./create-text-tracks-if-necessary":79,"./flash-constants":80,"./flash-transmuxer-worker":83,"./remove-cues-from-track":85,"global/window":14,"mux.js/lib/flv":29,"video.js":181,"webworkify":189}],83:[function(require,module,exports){
+},{"./add-text-track-data":77,"./create-text-tracks-if-necessary":80,"./flash-constants":81,"./flash-transmuxer-worker":84,"./remove-cues-from-track":86,"global/window":14,"mux.js/lib/flv":29,"video.js":182,"webworkify":190}],84:[function(require,module,exports){
 /**
  * @file flash-transmuxer-worker.js
  */
@@ -41931,7 +42080,7 @@ exports['default'] = function (self) {
 };
 
 module.exports = exports['default'];
-},{"global/window":14,"mux.js/lib/flv":29}],84:[function(require,module,exports){
+},{"global/window":14,"mux.js/lib/flv":29}],85:[function(require,module,exports){
 /**
  * @file html-media-source.js
  */
@@ -42291,7 +42440,7 @@ var HtmlMediaSource = (function (_videojs$EventTarget) {
 
 exports['default'] = HtmlMediaSource;
 module.exports = exports['default'];
-},{"./add-text-track-data":76,"./cleanup-text-tracks":77,"./codec-utils":78,"./virtual-source-buffer":88,"global/document":13,"global/window":14,"video.js":181}],85:[function(require,module,exports){
+},{"./add-text-track-data":77,"./cleanup-text-tracks":78,"./codec-utils":79,"./virtual-source-buffer":89,"global/document":13,"global/window":14,"video.js":182}],86:[function(require,module,exports){
 /**
  * @file remove-cues-from-track.js
  */
@@ -42335,7 +42484,7 @@ var removeCuesFromTrack = function removeCuesFromTrack(start, end, track) {
 
 exports["default"] = removeCuesFromTrack;
 module.exports = exports["default"];
-},{}],86:[function(require,module,exports){
+},{}],87:[function(require,module,exports){
 /**
  * @file transmuxer-worker.js
  */
@@ -42544,7 +42693,7 @@ exports['default'] = function (self) {
 };
 
 module.exports = exports['default'];
-},{"global/window":14,"mux.js/lib/mp4":38}],87:[function(require,module,exports){
+},{"global/window":14,"mux.js/lib/mp4":38}],88:[function(require,module,exports){
 /**
  * @file videojs-contrib-media-sources.js
  */
@@ -42701,7 +42850,7 @@ var URL = {
 exports.URL = URL;
 _videoJs2['default'].MediaSource = MediaSource;
 _videoJs2['default'].URL = URL;
-},{"./flash-media-source":81,"./html-media-source":84,"global/window":14,"video.js":181}],88:[function(require,module,exports){
+},{"./flash-media-source":82,"./html-media-source":85,"global/window":14,"video.js":182}],89:[function(require,module,exports){
 /**
  * @file virtual-source-buffer.js
  */
@@ -43348,7 +43497,7 @@ var VirtualSourceBuffer = (function (_videojs$EventTarget) {
 
 exports['default'] = VirtualSourceBuffer;
 module.exports = exports['default'];
-},{"./add-text-track-data":76,"./codec-utils":78,"./create-text-tracks-if-necessary":79,"./remove-cues-from-track":85,"./transmuxer-worker":86,"video.js":181,"webworkify":189}],89:[function(require,module,exports){
+},{"./add-text-track-data":77,"./codec-utils":79,"./create-text-tracks-if-necessary":80,"./remove-cues-from-track":86,"./transmuxer-worker":87,"video.js":182,"webworkify":190}],90:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -43472,7 +43621,7 @@ BigPlayButton.prototype.controlText_ = 'Play Video';
 _component2['default'].registerComponent('BigPlayButton', BigPlayButton);
 exports['default'] = BigPlayButton;
 
-},{"./button.js":90,"./component.js":93}],90:[function(require,module,exports){
+},{"./button.js":91,"./component.js":94}],91:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -43650,7 +43799,7 @@ var Button = function (_ClickableComponent) {
 _component2['default'].registerComponent('Button', Button);
 exports['default'] = Button;
 
-},{"./clickable-component.js":91,"./component":93,"./utils/log.js":174,"./utils/obj":176}],91:[function(require,module,exports){
+},{"./clickable-component.js":92,"./component":94,"./utils/log.js":175,"./utils/obj":177}],92:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -43973,7 +44122,7 @@ var ClickableComponent = function (_Component) {
 _component2['default'].registerComponent('ClickableComponent', ClickableComponent);
 exports['default'] = ClickableComponent;
 
-},{"./component":93,"./utils/dom.js":169,"./utils/events.js":170,"./utils/fn.js":171,"./utils/log.js":174,"./utils/obj":176,"global/document":182}],92:[function(require,module,exports){
+},{"./component":94,"./utils/dom.js":170,"./utils/events.js":171,"./utils/fn.js":172,"./utils/log.js":175,"./utils/obj":177,"global/document":183}],93:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -44072,7 +44221,7 @@ var CloseButton = function (_Button) {
 _component2['default'].registerComponent('CloseButton', CloseButton);
 exports['default'] = CloseButton;
 
-},{"./button":90,"./component":93}],93:[function(require,module,exports){
+},{"./button":91,"./component":94}],94:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -45900,7 +46049,7 @@ var Component = function () {
 Component.registerComponent('Component', Component);
 exports['default'] = Component;
 
-},{"./utils/dom.js":169,"./utils/events.js":170,"./utils/fn.js":171,"./utils/guid.js":173,"./utils/log.js":174,"./utils/merge-options.js":175,"./utils/to-title-case.js":179,"global/window":183}],94:[function(require,module,exports){
+},{"./utils/dom.js":170,"./utils/events.js":171,"./utils/fn.js":172,"./utils/guid.js":174,"./utils/log.js":175,"./utils/merge-options.js":176,"./utils/to-title-case.js":180,"global/window":184}],95:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -46021,7 +46170,7 @@ AudioTrackButton.prototype.controlText_ = 'Audio Track';
 _component2['default'].registerComponent('AudioTrackButton', AudioTrackButton);
 exports['default'] = AudioTrackButton;
 
-},{"../../component.js":93,"../track-button.js":124,"./audio-track-menu-item.js":95}],95:[function(require,module,exports){
+},{"../../component.js":94,"../track-button.js":125,"./audio-track-menu-item.js":96}],96:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -46142,7 +46291,7 @@ var AudioTrackMenuItem = function (_MenuItem) {
 _component2['default'].registerComponent('AudioTrackMenuItem', AudioTrackMenuItem);
 exports['default'] = AudioTrackMenuItem;
 
-},{"../../component.js":93,"../../menu/menu-item.js":136,"../../utils/fn.js":171}],96:[function(require,module,exports){
+},{"../../component.js":94,"../../menu/menu-item.js":137,"../../utils/fn.js":172}],97:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -46249,7 +46398,7 @@ ControlBar.prototype.options_ = {
 _component2['default'].registerComponent('ControlBar', ControlBar);
 exports['default'] = ControlBar;
 
-},{"../component.js":93,"./audio-track-controls/audio-track-button.js":94,"./fullscreen-toggle.js":97,"./live-display.js":98,"./mute-toggle.js":99,"./play-toggle.js":100,"./playback-rate-menu/playback-rate-menu-button.js":101,"./progress-control/progress-control.js":106,"./spacer-controls/custom-control-spacer.js":109,"./text-track-controls/captions-button.js":112,"./text-track-controls/chapters-button.js":113,"./text-track-controls/descriptions-button.js":115,"./text-track-controls/subtitles-button.js":117,"./time-controls/current-time-display.js":120,"./time-controls/duration-display.js":121,"./time-controls/remaining-time-display.js":122,"./time-controls/time-divider.js":123,"./volume-control/volume-control.js":126,"./volume-menu-button.js":128}],97:[function(require,module,exports){
+},{"../component.js":94,"./audio-track-controls/audio-track-button.js":95,"./fullscreen-toggle.js":98,"./live-display.js":99,"./mute-toggle.js":100,"./play-toggle.js":101,"./playback-rate-menu/playback-rate-menu-button.js":102,"./progress-control/progress-control.js":107,"./spacer-controls/custom-control-spacer.js":110,"./text-track-controls/captions-button.js":113,"./text-track-controls/chapters-button.js":114,"./text-track-controls/descriptions-button.js":116,"./text-track-controls/subtitles-button.js":118,"./time-controls/current-time-display.js":121,"./time-controls/duration-display.js":122,"./time-controls/remaining-time-display.js":123,"./time-controls/time-divider.js":124,"./volume-control/volume-control.js":127,"./volume-menu-button.js":129}],98:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -46367,7 +46516,7 @@ FullscreenToggle.prototype.controlText_ = 'Fullscreen';
 _component2['default'].registerComponent('FullscreenToggle', FullscreenToggle);
 exports['default'] = FullscreenToggle;
 
-},{"../button.js":90,"../component.js":93}],98:[function(require,module,exports){
+},{"../button.js":91,"../component.js":94}],99:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -46471,7 +46620,7 @@ var LiveDisplay = function (_Component) {
 _component2['default'].registerComponent('LiveDisplay', LiveDisplay);
 exports['default'] = LiveDisplay;
 
-},{"../component":93,"../utils/dom.js":169}],99:[function(require,module,exports){
+},{"../component":94,"../utils/dom.js":170}],100:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -46627,7 +46776,7 @@ MuteToggle.prototype.controlText_ = 'Mute';
 _component2['default'].registerComponent('MuteToggle', MuteToggle);
 exports['default'] = MuteToggle;
 
-},{"../button":90,"../component":93,"../utils/dom.js":169}],100:[function(require,module,exports){
+},{"../button":91,"../component":94,"../utils/dom.js":170}],101:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -46761,7 +46910,7 @@ PlayToggle.prototype.controlText_ = 'Play';
 _component2['default'].registerComponent('PlayToggle', PlayToggle);
 exports['default'] = PlayToggle;
 
-},{"../button.js":90,"../component.js":93}],101:[function(require,module,exports){
+},{"../button.js":91,"../component.js":94}],102:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -46998,7 +47147,7 @@ PlaybackRateMenuButton.prototype.controlText_ = 'Playback Rate';
 _component2['default'].registerComponent('PlaybackRateMenuButton', PlaybackRateMenuButton);
 exports['default'] = PlaybackRateMenuButton;
 
-},{"../../component.js":93,"../../menu/menu-button.js":135,"../../menu/menu.js":137,"../../utils/dom.js":169,"./playback-rate-menu-item.js":102}],102:[function(require,module,exports){
+},{"../../component.js":94,"../../menu/menu-button.js":136,"../../menu/menu.js":138,"../../utils/dom.js":170,"./playback-rate-menu-item.js":103}],103:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -47107,7 +47256,7 @@ PlaybackRateMenuItem.prototype.contentElType = 'button';
 _component2['default'].registerComponent('PlaybackRateMenuItem', PlaybackRateMenuItem);
 exports['default'] = PlaybackRateMenuItem;
 
-},{"../../component.js":93,"../../menu/menu-item.js":136}],103:[function(require,module,exports){
+},{"../../component.js":94,"../../menu/menu-item.js":137}],104:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -47231,7 +47380,7 @@ var LoadProgressBar = function (_Component) {
 _component2['default'].registerComponent('LoadProgressBar', LoadProgressBar);
 exports['default'] = LoadProgressBar;
 
-},{"../../component.js":93,"../../utils/dom.js":169}],104:[function(require,module,exports){
+},{"../../component.js":94,"../../utils/dom.js":170}],105:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -47427,7 +47576,7 @@ var MouseTimeDisplay = function (_Component) {
 _component2['default'].registerComponent('MouseTimeDisplay', MouseTimeDisplay);
 exports['default'] = MouseTimeDisplay;
 
-},{"../../component.js":93,"../../utils/computed-style.js":168,"../../utils/dom.js":169,"../../utils/fn.js":171,"../../utils/format-time.js":172}],105:[function(require,module,exports){
+},{"../../component.js":94,"../../utils/computed-style.js":169,"../../utils/dom.js":170,"../../utils/fn.js":172,"../../utils/format-time.js":173}],106:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -47530,7 +47679,7 @@ var PlayProgressBar = function (_Component) {
 _component2['default'].registerComponent('PlayProgressBar', PlayProgressBar);
 exports['default'] = PlayProgressBar;
 
-},{"../../component.js":93,"../../utils/fn.js":171,"../../utils/format-time.js":172}],106:[function(require,module,exports){
+},{"../../component.js":94,"../../utils/fn.js":172,"../../utils/format-time.js":173}],107:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -47599,7 +47748,7 @@ ProgressControl.prototype.options_ = {
 _component2['default'].registerComponent('ProgressControl', ProgressControl);
 exports['default'] = ProgressControl;
 
-},{"../../component.js":93,"./mouse-time-display.js":104,"./seek-bar.js":107}],107:[function(require,module,exports){
+},{"../../component.js":94,"./mouse-time-display.js":105,"./seek-bar.js":108}],108:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -47861,7 +48010,7 @@ SeekBar.prototype.playerEvent = 'timeupdate';
 _component2['default'].registerComponent('SeekBar', SeekBar);
 exports['default'] = SeekBar;
 
-},{"../../component.js":93,"../../slider/slider.js":145,"../../utils/computed-style.js":168,"../../utils/fn.js":171,"../../utils/format-time.js":172,"./load-progress-bar.js":103,"./play-progress-bar.js":105,"./tooltip-progress-bar.js":108}],108:[function(require,module,exports){
+},{"../../component.js":94,"../../slider/slider.js":146,"../../utils/computed-style.js":169,"../../utils/fn.js":172,"../../utils/format-time.js":173,"./load-progress-bar.js":104,"./play-progress-bar.js":106,"./tooltip-progress-bar.js":109}],109:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -47962,7 +48111,7 @@ var TooltipProgressBar = function (_Component) {
 _component2['default'].registerComponent('TooltipProgressBar', TooltipProgressBar);
 exports['default'] = TooltipProgressBar;
 
-},{"../../component.js":93,"../../utils/fn.js":171,"../../utils/format-time.js":172}],109:[function(require,module,exports){
+},{"../../component.js":94,"../../utils/fn.js":172,"../../utils/format-time.js":173}],110:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -48035,7 +48184,7 @@ var CustomControlSpacer = function (_Spacer) {
 _component2['default'].registerComponent('CustomControlSpacer', CustomControlSpacer);
 exports['default'] = CustomControlSpacer;
 
-},{"../../component.js":93,"./spacer.js":110}],110:[function(require,module,exports){
+},{"../../component.js":94,"./spacer.js":111}],111:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -48101,7 +48250,7 @@ _component2['default'].registerComponent('Spacer', Spacer);
 
 exports['default'] = Spacer;
 
-},{"../../component.js":93}],111:[function(require,module,exports){
+},{"../../component.js":94}],112:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -48188,7 +48337,7 @@ var CaptionSettingsMenuItem = function (_TextTrackMenuItem) {
 _component2['default'].registerComponent('CaptionSettingsMenuItem', CaptionSettingsMenuItem);
 exports['default'] = CaptionSettingsMenuItem;
 
-},{"../../component.js":93,"./text-track-menu-item.js":119}],112:[function(require,module,exports){
+},{"../../component.js":94,"./text-track-menu-item.js":120}],113:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -48301,7 +48450,7 @@ CaptionsButton.prototype.controlText_ = 'Captions';
 _component2['default'].registerComponent('CaptionsButton', CaptionsButton);
 exports['default'] = CaptionsButton;
 
-},{"../../component.js":93,"./caption-settings-menu-item.js":111,"./text-track-button.js":118}],113:[function(require,module,exports){
+},{"../../component.js":94,"./caption-settings-menu-item.js":112,"./text-track-button.js":119}],114:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -48543,7 +48692,7 @@ ChaptersButton.prototype.controlText_ = 'Chapters';
 _component2['default'].registerComponent('ChaptersButton', ChaptersButton);
 exports['default'] = ChaptersButton;
 
-},{"../../component.js":93,"../../utils/to-title-case.js":179,"./chapters-track-menu-item.js":114,"./text-track-button.js":118}],114:[function(require,module,exports){
+},{"../../component.js":94,"../../utils/to-title-case.js":180,"./chapters-track-menu-item.js":115,"./text-track-button.js":119}],115:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -48653,7 +48802,7 @@ var ChaptersTrackMenuItem = function (_MenuItem) {
 _component2['default'].registerComponent('ChaptersTrackMenuItem', ChaptersTrackMenuItem);
 exports['default'] = ChaptersTrackMenuItem;
 
-},{"../../component.js":93,"../../menu/menu-item.js":136,"../../utils/fn.js":171}],115:[function(require,module,exports){
+},{"../../component.js":94,"../../menu/menu-item.js":137,"../../utils/fn.js":172}],116:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -48791,7 +48940,7 @@ DescriptionsButton.prototype.controlText_ = 'Descriptions';
 _component2['default'].registerComponent('DescriptionsButton', DescriptionsButton);
 exports['default'] = DescriptionsButton;
 
-},{"../../component.js":93,"../../utils/fn.js":171,"./text-track-button.js":118}],116:[function(require,module,exports){
+},{"../../component.js":94,"../../utils/fn.js":172,"./text-track-button.js":119}],117:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -48884,7 +49033,7 @@ var OffTextTrackMenuItem = function (_TextTrackMenuItem) {
 _component2['default'].registerComponent('OffTextTrackMenuItem', OffTextTrackMenuItem);
 exports['default'] = OffTextTrackMenuItem;
 
-},{"../../component.js":93,"./text-track-menu-item.js":119}],117:[function(require,module,exports){
+},{"../../component.js":94,"./text-track-menu-item.js":120}],118:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -48973,7 +49122,7 @@ SubtitlesButton.prototype.controlText_ = 'Subtitles';
 _component2['default'].registerComponent('SubtitlesButton', SubtitlesButton);
 exports['default'] = SubtitlesButton;
 
-},{"../../component.js":93,"./text-track-button.js":118}],118:[function(require,module,exports){
+},{"../../component.js":94,"./text-track-button.js":119}],119:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -49078,7 +49227,7 @@ var TextTrackButton = function (_TrackButton) {
 _component2['default'].registerComponent('TextTrackButton', TextTrackButton);
 exports['default'] = TextTrackButton;
 
-},{"../../component.js":93,"../track-button.js":124,"./off-text-track-menu-item.js":116,"./text-track-menu-item.js":119}],119:[function(require,module,exports){
+},{"../../component.js":94,"../track-button.js":125,"./off-text-track-menu-item.js":117,"./text-track-menu-item.js":120}],120:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -49249,7 +49398,7 @@ var TextTrackMenuItem = function (_MenuItem) {
 _component2['default'].registerComponent('TextTrackMenuItem', TextTrackMenuItem);
 exports['default'] = TextTrackMenuItem;
 
-},{"../../component.js":93,"../../menu/menu-item.js":136,"../../utils/fn.js":171,"global/document":182,"global/window":183}],120:[function(require,module,exports){
+},{"../../component.js":94,"../../menu/menu-item.js":137,"../../utils/fn.js":172,"global/document":183,"global/window":184}],121:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -49359,7 +49508,7 @@ var CurrentTimeDisplay = function (_Component) {
 _component2['default'].registerComponent('CurrentTimeDisplay', CurrentTimeDisplay);
 exports['default'] = CurrentTimeDisplay;
 
-},{"../../component.js":93,"../../utils/dom.js":169,"../../utils/format-time.js":172}],121:[function(require,module,exports){
+},{"../../component.js":94,"../../utils/dom.js":170,"../../utils/format-time.js":173}],122:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -49479,7 +49628,7 @@ var DurationDisplay = function (_Component) {
 _component2['default'].registerComponent('DurationDisplay', DurationDisplay);
 exports['default'] = DurationDisplay;
 
-},{"../../component.js":93,"../../utils/dom.js":169,"../../utils/format-time.js":172}],122:[function(require,module,exports){
+},{"../../component.js":94,"../../utils/dom.js":170,"../../utils/format-time.js":173}],123:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -49595,7 +49744,7 @@ var RemainingTimeDisplay = function (_Component) {
 _component2['default'].registerComponent('RemainingTimeDisplay', RemainingTimeDisplay);
 exports['default'] = RemainingTimeDisplay;
 
-},{"../../component.js":93,"../../utils/dom.js":169,"../../utils/format-time.js":172}],123:[function(require,module,exports){
+},{"../../component.js":94,"../../utils/dom.js":170,"../../utils/format-time.js":173}],124:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -49649,7 +49798,7 @@ var TimeDivider = function (_Component) {
 _component2['default'].registerComponent('TimeDivider', TimeDivider);
 exports['default'] = TimeDivider;
 
-},{"../../component.js":93}],124:[function(require,module,exports){
+},{"../../component.js":94}],125:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -49729,7 +49878,7 @@ var TrackButton = function (_MenuButton) {
 _component2['default'].registerComponent('TrackButton', TrackButton);
 exports['default'] = TrackButton;
 
-},{"../component.js":93,"../menu/menu-button.js":135,"../utils/fn.js":171}],125:[function(require,module,exports){
+},{"../component.js":94,"../menu/menu-button.js":136,"../utils/fn.js":172}],126:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -49912,7 +50061,7 @@ VolumeBar.prototype.playerEvent = 'volumechange';
 _component2['default'].registerComponent('VolumeBar', VolumeBar);
 exports['default'] = VolumeBar;
 
-},{"../../component.js":93,"../../slider/slider.js":145,"../../utils/fn.js":171,"./volume-level.js":127}],126:[function(require,module,exports){
+},{"../../component.js":94,"../../slider/slider.js":146,"../../utils/fn.js":172,"./volume-level.js":128}],127:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -50005,7 +50154,7 @@ VolumeControl.prototype.options_ = {
 _component2['default'].registerComponent('VolumeControl', VolumeControl);
 exports['default'] = VolumeControl;
 
-},{"../../component.js":93,"./volume-bar.js":125}],127:[function(require,module,exports){
+},{"../../component.js":94,"./volume-bar.js":126}],128:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -50058,7 +50207,7 @@ var VolumeLevel = function (_Component) {
 _component2['default'].registerComponent('VolumeLevel', VolumeLevel);
 exports['default'] = VolumeLevel;
 
-},{"../../component.js":93}],128:[function(require,module,exports){
+},{"../../component.js":94}],129:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -50303,7 +50452,7 @@ VolumeMenuButton.prototype.controlText_ = 'Mute';
 _component2['default'].registerComponent('VolumeMenuButton', VolumeMenuButton);
 exports['default'] = VolumeMenuButton;
 
-},{"../component.js":93,"../popup/popup-button.js":141,"../popup/popup.js":142,"../utils/fn.js":171,"./mute-toggle.js":99,"./volume-control/volume-bar.js":125}],129:[function(require,module,exports){
+},{"../component.js":94,"../popup/popup-button.js":142,"../popup/popup.js":143,"../utils/fn.js":172,"./mute-toggle.js":100,"./volume-control/volume-bar.js":126}],130:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -50406,7 +50555,7 @@ ErrorDisplay.prototype.options_ = (0, _mergeOptions2['default'])(_modalDialog2['
 _component2['default'].registerComponent('ErrorDisplay', ErrorDisplay);
 exports['default'] = ErrorDisplay;
 
-},{"./component":93,"./modal-dialog":138,"./utils/merge-options":175}],130:[function(require,module,exports){
+},{"./component":94,"./modal-dialog":139,"./utils/merge-options":176}],131:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -50577,7 +50726,7 @@ EventTarget.prototype.dispatchEvent = EventTarget.prototype.trigger;
 
 exports['default'] = EventTarget;
 
-},{"./utils/events.js":170}],131:[function(require,module,exports){
+},{"./utils/events.js":171}],132:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -50679,7 +50828,7 @@ var extendFn = function extendFn(superClass) {
 
 exports['default'] = extendFn;
 
-},{"./utils/log":174,"./utils/obj":176}],132:[function(require,module,exports){
+},{"./utils/log":175,"./utils/obj":177}],133:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -50736,7 +50885,7 @@ if (browserApi) {
 
 exports['default'] = FullscreenApi;
 
-},{"global/document":182}],133:[function(require,module,exports){
+},{"global/document":183}],134:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -50789,7 +50938,7 @@ var LoadingSpinner = function (_Component) {
 _component2['default'].registerComponent('LoadingSpinner', LoadingSpinner);
 exports['default'] = LoadingSpinner;
 
-},{"./component":93}],134:[function(require,module,exports){
+},{"./component":94}],135:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -51002,7 +51151,7 @@ for (var errNum = 0; errNum < MediaError.errorTypes.length; errNum++) {
 
 exports['default'] = MediaError;
 
-},{"./utils/obj":176}],135:[function(require,module,exports){
+},{"./utils/obj":177}],136:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -51356,7 +51505,7 @@ var MenuButton = function (_ClickableComponent) {
 _component2['default'].registerComponent('MenuButton', MenuButton);
 exports['default'] = MenuButton;
 
-},{"../clickable-component.js":91,"../component.js":93,"../utils/dom.js":169,"../utils/fn.js":171,"../utils/to-title-case.js":179,"./menu.js":137}],136:[function(require,module,exports){
+},{"../clickable-component.js":92,"../component.js":94,"../utils/dom.js":170,"../utils/fn.js":172,"../utils/to-title-case.js":180,"./menu.js":138}],137:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -51496,7 +51645,7 @@ var MenuItem = function (_ClickableComponent) {
 _component2['default'].registerComponent('MenuItem', MenuItem);
 exports['default'] = MenuItem;
 
-},{"../clickable-component.js":91,"../component.js":93,"../utils/obj":176}],137:[function(require,module,exports){
+},{"../clickable-component.js":92,"../component.js":94,"../utils/obj":177}],138:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -51700,7 +51849,7 @@ var Menu = function (_Component) {
 _component2['default'].registerComponent('Menu', Menu);
 exports['default'] = Menu;
 
-},{"../component.js":93,"../utils/dom.js":169,"../utils/events.js":170,"../utils/fn.js":171}],138:[function(require,module,exports){
+},{"../component.js":94,"../utils/dom.js":170,"../utils/events.js":171,"../utils/fn.js":172}],139:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -52195,7 +52344,7 @@ ModalDialog.prototype.options_ = {
 _component2['default'].registerComponent('ModalDialog', ModalDialog);
 exports['default'] = ModalDialog;
 
-},{"./component":93,"./utils/dom":169,"./utils/fn":171}],139:[function(require,module,exports){
+},{"./component":94,"./utils/dom":170,"./utils/fn":172}],140:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -55882,7 +56031,7 @@ TECH_EVENTS_RETRIGGER.forEach(function (event) {
 _component2['default'].registerComponent('Player', Player);
 exports['default'] = Player;
 
-},{"./big-play-button.js":89,"./close-button.js":92,"./component.js":93,"./control-bar/control-bar.js":96,"./error-display.js":129,"./fullscreen-api.js":132,"./loading-spinner.js":133,"./media-error.js":134,"./modal-dialog":138,"./poster-image.js":143,"./tech/flash.js":147,"./tech/html5.js":148,"./tech/loader.js":149,"./tech/tech.js":150,"./tracks/audio-track-list.js":151,"./tracks/text-track-display.js":156,"./tracks/text-track-list-converter.js":157,"./tracks/text-track-settings.js":159,"./tracks/video-track-list.js":164,"./utils/browser.js":166,"./utils/buffer.js":167,"./utils/dom.js":169,"./utils/events.js":170,"./utils/fn.js":171,"./utils/guid.js":173,"./utils/log.js":174,"./utils/merge-options.js":175,"./utils/obj":176,"./utils/stylesheet.js":177,"./utils/time-ranges.js":178,"./utils/to-title-case.js":179,"global/document":182,"global/window":183,"safe-json-parse/tuple":50}],140:[function(require,module,exports){
+},{"./big-play-button.js":90,"./close-button.js":93,"./component.js":94,"./control-bar/control-bar.js":97,"./error-display.js":130,"./fullscreen-api.js":133,"./loading-spinner.js":134,"./media-error.js":135,"./modal-dialog":139,"./poster-image.js":144,"./tech/flash.js":148,"./tech/html5.js":149,"./tech/loader.js":150,"./tech/tech.js":151,"./tracks/audio-track-list.js":152,"./tracks/text-track-display.js":157,"./tracks/text-track-list-converter.js":158,"./tracks/text-track-settings.js":160,"./tracks/video-track-list.js":165,"./utils/browser.js":167,"./utils/buffer.js":168,"./utils/dom.js":170,"./utils/events.js":171,"./utils/fn.js":172,"./utils/guid.js":174,"./utils/log.js":175,"./utils/merge-options.js":176,"./utils/obj":177,"./utils/stylesheet.js":178,"./utils/time-ranges.js":179,"./utils/to-title-case.js":180,"global/document":183,"global/window":184,"safe-json-parse/tuple":50}],141:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -55910,7 +56059,7 @@ var plugin = function plugin(name, init) {
     */
 exports['default'] = plugin;
 
-},{"./player.js":139}],141:[function(require,module,exports){
+},{"./player.js":140}],142:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -56034,7 +56183,7 @@ var PopupButton = function (_ClickableComponent) {
 _component2['default'].registerComponent('PopupButton', PopupButton);
 exports['default'] = PopupButton;
 
-},{"../clickable-component.js":91,"../component.js":93}],142:[function(require,module,exports){
+},{"../clickable-component.js":92,"../component.js":94}],143:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -56134,7 +56283,7 @@ var Popup = function (_Component) {
 _component2['default'].registerComponent('Popup', Popup);
 exports['default'] = Popup;
 
-},{"../component.js":93,"../utils/dom.js":169,"../utils/events.js":170,"../utils/fn.js":171}],143:[function(require,module,exports){
+},{"../component.js":94,"../utils/dom.js":170,"../utils/events.js":171,"../utils/fn.js":172}],144:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -56317,7 +56466,7 @@ var PosterImage = function (_ClickableComponent) {
 _component2['default'].registerComponent('PosterImage', PosterImage);
 exports['default'] = PosterImage;
 
-},{"./clickable-component.js":91,"./component.js":93,"./utils/browser.js":166,"./utils/dom.js":169,"./utils/fn.js":171}],144:[function(require,module,exports){
+},{"./clickable-component.js":92,"./component.js":94,"./utils/browser.js":167,"./utils/dom.js":170,"./utils/fn.js":172}],145:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -56463,7 +56612,7 @@ exports.autoSetup = autoSetup;
 exports.autoSetupTimeout = autoSetupTimeout;
 exports.hasLoaded = hasLoaded;
 
-},{"./utils/dom":169,"./utils/events.js":170,"global/document":182,"global/window":183}],145:[function(require,module,exports){
+},{"./utils/dom":170,"./utils/events.js":171,"global/document":183,"global/window":184}],146:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -56818,7 +56967,7 @@ var Slider = function (_Component) {
 _component2['default'].registerComponent('Slider', Slider);
 exports['default'] = Slider;
 
-},{"../component.js":93,"../utils/dom.js":169,"../utils/obj":176}],146:[function(require,module,exports){
+},{"../component.js":94,"../utils/dom.js":170,"../utils/obj":177}],147:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -57022,7 +57171,7 @@ function FlashRtmpDecorator(Flash) {
 
 exports['default'] = FlashRtmpDecorator;
 
-},{}],147:[function(require,module,exports){
+},{}],148:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -58204,7 +58353,7 @@ _component2['default'].registerComponent('Flash', Flash);
 _tech2['default'].registerTech('Flash', Flash);
 exports['default'] = Flash;
 
-},{"../component":93,"../utils/dom.js":169,"../utils/obj":176,"../utils/time-ranges.js":178,"../utils/url.js":180,"./flash-rtmp":146,"./tech":150,"global/window":183}],148:[function(require,module,exports){
+},{"../component":94,"../utils/dom.js":170,"../utils/obj":177,"../utils/time-ranges.js":179,"../utils/url.js":181,"./flash-rtmp":147,"./tech":151,"global/window":184}],149:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -60105,7 +60254,7 @@ _component2['default'].registerComponent('Html5', Html5);
 _tech2['default'].registerTech('Html5', Html5);
 exports['default'] = Html5;
 
-},{"../component":93,"../utils/browser.js":166,"../utils/dom.js":169,"../utils/fn.js":171,"../utils/log.js":174,"../utils/merge-options.js":175,"../utils/obj":176,"../utils/to-title-case.js":179,"../utils/url.js":180,"./tech.js":150,"global/document":182,"global/window":183,"tsml":52}],149:[function(require,module,exports){
+},{"../component":94,"../utils/browser.js":167,"../utils/dom.js":170,"../utils/fn.js":172,"../utils/log.js":175,"../utils/merge-options.js":176,"../utils/obj":177,"../utils/to-title-case.js":180,"../utils/url.js":181,"./tech.js":151,"global/document":183,"global/window":184,"tsml":53}],150:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -60195,7 +60344,7 @@ var MediaLoader = function (_Component) {
 _component2['default'].registerComponent('MediaLoader', MediaLoader);
 exports['default'] = MediaLoader;
 
-},{"../component.js":93,"../utils/to-title-case.js":179,"./tech.js":150}],150:[function(require,module,exports){
+},{"../component.js":94,"../utils/to-title-case.js":180,"./tech.js":151}],151:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -61612,7 +61761,7 @@ _component2['default'].registerComponent('MediaTechController', Tech);
 Tech.registerTech('Tech', Tech);
 exports['default'] = Tech;
 
-},{"../component":93,"../media-error.js":134,"../tracks/audio-track-list":151,"../tracks/html-track-element":154,"../tracks/html-track-element-list":153,"../tracks/text-track":160,"../tracks/text-track-list":158,"../tracks/video-track-list":164,"../utils/buffer.js":167,"../utils/fn.js":171,"../utils/log.js":174,"../utils/merge-options.js":175,"../utils/obj":176,"../utils/time-ranges.js":178,"global/document":182,"global/window":183,"videojs-vtt.js":185}],151:[function(require,module,exports){
+},{"../component":94,"../media-error.js":135,"../tracks/audio-track-list":152,"../tracks/html-track-element":155,"../tracks/html-track-element-list":154,"../tracks/text-track":161,"../tracks/text-track-list":159,"../tracks/video-track-list":165,"../utils/buffer.js":168,"../utils/fn.js":172,"../utils/log.js":175,"../utils/merge-options.js":176,"../utils/obj":177,"../utils/time-ranges.js":179,"global/document":183,"global/window":184,"videojs-vtt.js":186}],152:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -61795,7 +61944,7 @@ var AudioTrackList = function (_TrackList) {
 
 exports['default'] = AudioTrackList;
 
-},{"../utils/browser.js":166,"./track-list":162,"global/document":182}],152:[function(require,module,exports){
+},{"../utils/browser.js":167,"./track-list":163,"global/document":183}],153:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -61926,7 +62075,7 @@ var AudioTrack = function (_Track) {
 
 exports['default'] = AudioTrack;
 
-},{"../utils/browser.js":166,"../utils/merge-options":175,"./track":163,"./track-enums":161}],153:[function(require,module,exports){
+},{"../utils/browser.js":167,"../utils/merge-options":176,"./track":164,"./track-enums":162}],154:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -62076,7 +62225,7 @@ var HtmlTrackElementList = function () {
 
 exports['default'] = HtmlTrackElementList;
 
-},{"../utils/browser.js":166,"global/document":182}],154:[function(require,module,exports){
+},{"../utils/browser.js":167,"global/document":183}],155:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -62247,7 +62396,7 @@ HTMLTrackElement.ERROR = ERROR;
 
 exports['default'] = HTMLTrackElement;
 
-},{"../event-target":130,"../tracks/text-track":160,"../utils/browser.js":166,"global/document":182}],155:[function(require,module,exports){
+},{"../event-target":131,"../tracks/text-track":161,"../utils/browser.js":167,"global/document":183}],156:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -62401,7 +62550,7 @@ var TextTrackCueList = function () {
 
 exports['default'] = TextTrackCueList;
 
-},{"../utils/browser.js":166,"global/document":182}],156:[function(require,module,exports){
+},{"../utils/browser.js":167,"global/document":183}],157:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -62753,7 +62902,7 @@ var TextTrackDisplay = function (_Component) {
 _component2['default'].registerComponent('TextTrackDisplay', TextTrackDisplay);
 exports['default'] = TextTrackDisplay;
 
-},{"../component":93,"../utils/fn.js":171,"global/window":183}],157:[function(require,module,exports){
+},{"../component":94,"../utils/fn.js":172,"global/window":184}],158:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -62857,7 +63006,7 @@ var jsonToTextTracks = function jsonToTextTracks(json, tech) {
 
 exports['default'] = { textTracksToJson: textTracksToJson, jsonToTextTracks: jsonToTextTracks, trackToJson_: trackToJson_ };
 
-},{}],158:[function(require,module,exports){
+},{}],159:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -62963,7 +63112,7 @@ var TextTrackList = function (_TrackList) {
 
 exports['default'] = TextTrackList;
 
-},{"../utils/browser.js":166,"../utils/fn.js":171,"./track-list":162,"global/document":182}],159:[function(require,module,exports){
+},{"../utils/browser.js":167,"../utils/fn.js":172,"./track-list":163,"global/document":183}],160:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -63566,7 +63715,7 @@ _component2['default'].registerComponent('TextTrackSettings', TextTrackSettings)
 
 exports['default'] = TextTrackSettings;
 
-},{"../component":93,"../utils/dom":169,"../utils/fn":171,"../utils/log":174,"../utils/obj":176,"global/window":183}],160:[function(require,module,exports){
+},{"../component":94,"../utils/dom":170,"../utils/fn":172,"../utils/log":175,"../utils/obj":177,"global/window":184}],161:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -64017,7 +64166,7 @@ TextTrack.prototype.allowedEvents_ = {
 
 exports['default'] = TextTrack;
 
-},{"../utils/browser.js":166,"../utils/fn.js":171,"../utils/log.js":174,"../utils/merge-options":175,"../utils/url.js":180,"./text-track-cue-list":155,"./track-enums":161,"./track.js":163,"global/window":183,"xhr":184}],161:[function(require,module,exports){
+},{"../utils/browser.js":167,"../utils/fn.js":172,"../utils/log.js":175,"../utils/merge-options":176,"../utils/url.js":181,"./text-track-cue-list":156,"./track-enums":162,"./track.js":164,"global/window":184,"xhr":185}],162:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -64085,7 +64234,7 @@ var TextTrackMode = exports.TextTrackMode = {
   showing: 'showing'
 };
 
-},{}],162:[function(require,module,exports){
+},{}],163:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -64320,7 +64469,7 @@ for (var event in TrackList.prototype.allowedEvents_) {
 
 exports['default'] = TrackList;
 
-},{"../event-target":130,"../utils/browser.js":166,"global/document":182}],163:[function(require,module,exports){
+},{"../event-target":131,"../utils/browser.js":167,"global/document":183}],164:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -64464,7 +64613,7 @@ var Track = function (_EventTarget) {
 
 exports['default'] = Track;
 
-},{"../event-target":130,"../utils/browser.js":166,"../utils/guid.js":173,"global/document":182}],164:[function(require,module,exports){
+},{"../event-target":131,"../utils/browser.js":167,"../utils/guid.js":174,"global/document":183}],165:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -64659,7 +64808,7 @@ var VideoTrackList = function (_TrackList) {
 
 exports['default'] = VideoTrackList;
 
-},{"../utils/browser.js":166,"./track-list":162,"global/document":182}],165:[function(require,module,exports){
+},{"../utils/browser.js":167,"./track-list":163,"global/document":183}],166:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -64789,7 +64938,7 @@ var VideoTrack = function (_Track) {
 
 exports['default'] = VideoTrack;
 
-},{"../utils/browser.js":166,"../utils/merge-options":175,"./track":163,"./track-enums":161}],166:[function(require,module,exports){
+},{"../utils/browser.js":167,"../utils/merge-options":176,"./track":164,"./track-enums":162}],167:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -64896,7 +65045,7 @@ var TOUCH_ENABLED = exports.TOUCH_ENABLED = Dom.isReal() && ('ontouchstart' in _
 
 var BACKGROUND_SIZE_SUPPORTED = exports.BACKGROUND_SIZE_SUPPORTED = Dom.isReal() && 'backgroundSize' in _window2['default'].document.createElement('video').style;
 
-},{"./dom":169,"global/window":183}],167:[function(require,module,exports){
+},{"./dom":170,"global/window":184}],168:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -64947,7 +65096,7 @@ function bufferedPercent(buffered, duration) {
    * @module buffer
    */
 
-},{"./time-ranges.js":178}],168:[function(require,module,exports){
+},{"./time-ranges.js":179}],169:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -64991,7 +65140,7 @@ function computedStyle(el, prop) {
    * @module computed-style
    */
 
-},{"global/window":183}],169:[function(require,module,exports){
+},{"global/window":184}],170:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -65890,7 +66039,7 @@ var $ = exports.$ = createQuerier('querySelector');
  */
 var $$ = exports.$$ = createQuerier('querySelectorAll');
 
-},{"./guid.js":173,"./log.js":174,"./obj":176,"global/document":182,"global/window":183,"tsml":52}],170:[function(require,module,exports){
+},{"./guid.js":174,"./log.js":175,"./obj":177,"global/document":183,"global/window":184,"tsml":53}],171:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -66378,7 +66527,7 @@ function one(elem, type, fn) {
   on(elem, type, func);
 }
 
-},{"./dom.js":169,"./guid.js":173,"./log.js":174,"global/document":182,"global/window":183}],171:[function(require,module,exports){
+},{"./dom.js":170,"./guid.js":174,"./log.js":175,"global/document":183,"global/window":184}],172:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -66455,7 +66604,7 @@ var throttle = exports.throttle = function throttle(fn, wait) {
   return throttled;
 };
 
-},{"./guid.js":173}],172:[function(require,module,exports){
+},{"./guid.js":174}],173:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -66509,7 +66658,7 @@ function formatTime(seconds) {
 
 exports['default'] = formatTime;
 
-},{}],173:[function(require,module,exports){
+},{}],174:[function(require,module,exports){
 "use strict";
 
 exports.__esModule = true;
@@ -66535,7 +66684,7 @@ function newGUID() {
   return _guid++;
 }
 
-},{}],174:[function(require,module,exports){
+},{}],175:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -66677,7 +66826,7 @@ log.warn = function () {
 
 exports['default'] = log;
 
-},{"./browser":166,"./obj":176,"global/window":183}],175:[function(require,module,exports){
+},{"./browser":167,"./obj":177,"global/window":184}],176:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -66727,7 +66876,7 @@ function mergeOptions() {
    * @module merge-options
    */
 
-},{"./obj":176}],176:[function(require,module,exports){
+},{"./obj":177}],177:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -66881,7 +67030,7 @@ function isPlain(value) {
   return isObject(value) && toString.call(value) === '[object Object]' && value.constructor === Object;
 }
 
-},{}],177:[function(require,module,exports){
+},{}],178:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -66931,7 +67080,7 @@ var setTextContent = exports.setTextContent = function setTextContent(el, conten
   }
 };
 
-},{"global/document":182}],178:[function(require,module,exports){
+},{"global/document":183}],179:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -67078,7 +67227,7 @@ function createTimeRanges(start, end) {
 
 exports.createTimeRange = createTimeRanges;
 
-},{"./log.js":174}],179:[function(require,module,exports){
+},{"./log.js":175}],180:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -67106,7 +67255,7 @@ function toTitleCase(string) {
 
 exports['default'] = toTitleCase;
 
-},{}],180:[function(require,module,exports){
+},{}],181:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -67281,7 +67430,7 @@ var isCrossOrigin = exports.isCrossOrigin = function isCrossOrigin(url) {
   return crossOrigin;
 };
 
-},{"global/document":182,"global/window":183}],181:[function(require,module,exports){
+},{"global/document":183,"global/window":184}],182:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -68004,7 +68153,7 @@ if (typeof define === 'function' && define.amd) {
 
 exports['default'] = videojs;
 
-},{"./component":93,"./event-target":130,"./extend.js":131,"./player":139,"./plugins.js":140,"./setup":144,"./tech/tech.js":150,"./tracks/audio-track.js":152,"./tracks/text-track.js":160,"./tracks/video-track.js":165,"./utils/browser.js":166,"./utils/computed-style.js":168,"./utils/dom.js":169,"./utils/events.js":170,"./utils/fn.js":171,"./utils/format-time.js":172,"./utils/log.js":174,"./utils/merge-options.js":175,"./utils/obj":176,"./utils/stylesheet.js":177,"./utils/time-ranges.js":178,"./utils/url.js":180,"global/document":182,"global/window":183,"xhr":184}],182:[function(require,module,exports){
+},{"./component":94,"./event-target":131,"./extend.js":132,"./player":140,"./plugins.js":141,"./setup":145,"./tech/tech.js":151,"./tracks/audio-track.js":153,"./tracks/text-track.js":161,"./tracks/video-track.js":166,"./utils/browser.js":167,"./utils/computed-style.js":169,"./utils/dom.js":170,"./utils/events.js":171,"./utils/fn.js":172,"./utils/format-time.js":173,"./utils/log.js":175,"./utils/merge-options.js":176,"./utils/obj":177,"./utils/stylesheet.js":178,"./utils/time-ranges.js":179,"./utils/url.js":181,"global/document":183,"global/window":184,"xhr":185}],183:[function(require,module,exports){
 (function (global){
 var topLevel = typeof global !== 'undefined' ? global :
     typeof window !== 'undefined' ? window : {}
@@ -68023,7 +68172,7 @@ if (typeof document !== 'undefined') {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"min-document":9}],183:[function(require,module,exports){
+},{"min-document":9}],184:[function(require,module,exports){
 (function (global){
 if (typeof window !== "undefined") {
     module.exports = window;
@@ -68036,7 +68185,7 @@ if (typeof window !== "undefined") {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],184:[function(require,module,exports){
+},{}],185:[function(require,module,exports){
 "use strict";
 var window = require("global/window")
 var isFunction = require("is-function")
@@ -68273,7 +68422,7 @@ function getXml(xhr) {
 
 function noop() {}
 
-},{"global/window":14,"is-function":15,"parse-headers":46,"xtend":191}],185:[function(require,module,exports){
+},{"global/window":14,"is-function":15,"parse-headers":46,"xtend":192}],186:[function(require,module,exports){
 /**
  * Copyright 2013 vtt.js Contributors
  *
@@ -68325,7 +68474,7 @@ if (!window.VTTCue) {
   vttjs.shim();
 }
 
-},{"./vtt.js":186,"./vttcue.js":187,"./vttregion.js":188,"global/window":14}],186:[function(require,module,exports){
+},{"./vtt.js":187,"./vttcue.js":188,"./vttregion.js":189,"global/window":14}],187:[function(require,module,exports){
 /**
  * Copyright 2013 vtt.js Contributors
  *
@@ -69656,7 +69805,7 @@ WebVTT.Parser.prototype = {
 
 module.exports = WebVTT;
 
-},{}],187:[function(require,module,exports){
+},{}],188:[function(require,module,exports){
 /**
  * Copyright 2013 vtt.js Contributors
  *
@@ -69963,7 +70112,7 @@ VTTCue.prototype.getCueAsHTML = function() {
 
 module.exports = VTTCue;
 
-},{}],188:[function(require,module,exports){
+},{}],189:[function(require,module,exports){
 /**
  * Copyright 2013 vtt.js Contributors
  *
@@ -70099,7 +70248,7 @@ function VTTRegion() {
 
 module.exports = VTTRegion;
 
-},{}],189:[function(require,module,exports){
+},{}],190:[function(require,module,exports){
 var bundleFn = arguments[3];
 var sources = arguments[4];
 var cache = arguments[5];
@@ -70156,7 +70305,7 @@ module.exports = function (fn) {
     ));
 };
 
-},{}],190:[function(require,module,exports){
+},{}],191:[function(require,module,exports){
 "use strict";
 var window = require("global/window")
 var isFunction = require("is-function")
@@ -70399,7 +70548,7 @@ function getXml(xhr) {
 
 function noop() {}
 
-},{"global/window":14,"is-function":15,"parse-headers":46,"xtend":191}],191:[function(require,module,exports){
+},{"global/window":14,"is-function":15,"parse-headers":46,"xtend":192}],192:[function(require,module,exports){
 module.exports = extend
 
 var hasOwnProperty = Object.prototype.hasOwnProperty;

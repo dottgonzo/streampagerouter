@@ -21,7 +21,7 @@
     "test",
     "tsconfig.json",
     "typings.json",
-    "index.html",
+    "*.html",
     "package*",
     "src"
   ]

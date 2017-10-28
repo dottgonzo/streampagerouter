@@ -21,19 +21,18 @@
     "test",
     "tsconfig.json",
     "typings.json",
-    "index.html",
+    "*.html",
     "package*",
     "src"
   ],
-  "version": "0.0.17",
-  "_release": "0.0.17",
+  "version": "1.0.1",
+  "_release": "1.0.1",
   "_resolution": {
     "type": "version",
-    "tag": "v0.0.17",
-    "commit": "fea4a94afd44b90fba0e35d3ef55a92e755359c3"
+    "tag": "v1.0.1",
+    "commit": "31979653b9f388d2221875466603855f736c3beb"
   },
   "_source": "https://github.com/dottgonzo/streampagelib.git",
-  "_target": "^0.0.17",
-  "_originalSource": "streampagelib",
-  "_direct": true
+  "_target": "^1.0.1",
+  "_originalSource": "streampagelib"
 }

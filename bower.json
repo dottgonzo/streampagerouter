@@ -1,0 +1,14 @@
+{
+  "name": "streampagerouter",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Dario Caruso"
+  ],
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/dottgonzo/streampagerouter",
+  "private": true,
+  "dependencies": {
+    "streampagelib": "^1.0.1"
+  }
+}

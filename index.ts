@@ -10,7 +10,7 @@ export function router() {
     router.use(bodyParser.urlencoded({ extended: true }))
 
     router.use('/bower', express.static('bower_components'))
-
+    
     router.get('/stream', function (req, res) {
 
         fs.readFile(__dirname+'/views/streaming.html', 'utf8', function (err, data) {

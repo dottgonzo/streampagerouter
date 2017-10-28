@@ -1,7 +1,9 @@
 import {router} from './index'
 import * as express from 'express'
+const cors = require( 'cors')
 
 const app = express()
+app.use(cors())
 
 app.use('/', router())
 
