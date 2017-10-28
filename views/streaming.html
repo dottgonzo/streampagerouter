@@ -47,7 +47,7 @@
 </head>
 
 <body style="margin:0px;height:100%">
-  <div id="videotest"></div>
+  <div id="streamvideo"></div>
 
 
   <script src="../bower/streampagelib/dist/streampagelib.js"></script>
@@ -55,14 +55,15 @@
   <script>
     var params = location.href.split('stream?')[1]
     var channel = params.split('channel=')[1].split('&')[0]
+    var hostname = params.split('hostname=')[1].split('&')[0]
 
 
 
     var player = SPlayer({
       channel: channel,
-      el: 'videotest', // default is videojs
+      el: 'streamvideo', // default is videojs
       ratio43: true,
-      hostname: 'stream034.be-on.tv'
+      hostname: hostname
     })
 
   </script>
