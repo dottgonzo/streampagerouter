@@ -57,15 +57,22 @@
     var channel = params.split('channel=')[1].split('&')[0]
     var hostname = params.split('hostname=')[1].split('&')[0]
 
-
-
-    var player = SPlayer({
+    var options = {
       channel: channel,
       el: 'streamvideo', // default is videojs
       ratio43: true,
       hostname: hostname,
-      swfLib:'../bower/streampagelib/GrindPlayer.swf'
-    })
+      swfLib: '../bower/streampagelib/GrindPlayer.swf'
+    }
+
+
+    if (params.split('img=').length > 1) {
+      options.poster = params.split('img=')[1].split('&')[0]
+    }
+    if (params.split('autoplay=').length > 1) {
+      options.autoplay = true
+    }
+    var player = SPlayer(options)
 
   </script>
 
