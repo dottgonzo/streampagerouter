@@ -60,11 +60,12 @@
     var options = {
       channel: channel,
       el: 'streamvideo', // default is videojs
-      ratio43: true,
       hostname: hostname,
       swfLib: '../bower/streampagelib/GrindPlayer.swf'
     }
-
+    if (params.split('ratio43=').length > 1) {
+      options.ratio43 = true
+    }
 
     if (params.split('img=').length > 1) {
       options.poster = params.split('img=')[1].split('&')[0]
