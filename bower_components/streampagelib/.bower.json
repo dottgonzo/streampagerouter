@@ -25,14 +25,14 @@
     "package*",
     "src"
   ],
-  "version": "1.0.2",
-  "_release": "1.0.2",
+  "version": "1.0.3",
+  "_release": "1.0.3",
   "_resolution": {
     "type": "version",
-    "tag": "v1.0.2",
-    "commit": "83b25a091d65142cd1edc6fa8740e7630b9f00fa"
+    "tag": "v1.0.3",
+    "commit": "846f262b027b4bb8774d833e6be4e316a142fe82"
   },
   "_source": "https://github.com/dottgonzo/streampagelib.git",
-  "_target": "^1.0.2",
+  "_target": "^1.0.3",
   "_originalSource": "streampagelib"
 }
