@@ -9,6 +9,6 @@
   "homepage": "https://github.com/dottgonzo/streampagerouter",
   "private": true,
   "dependencies": {
-    "streampagelib": "^1.0.6"
+    "streampagelib": "^1.0.7"
   }
 }
