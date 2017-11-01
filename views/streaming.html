@@ -63,7 +63,7 @@
       hostname: hostname,
       swfLib: '../bower/streampagelib/GrindPlayer.swf'
     }
-    if (params.split('ratio43=').length > 1) {
+    if (params.split('ratio43=').length > 1 && params.split('ratio43=')[1].split('&')[0] === 'true') {
       options.ratio43 = true
     }
 
