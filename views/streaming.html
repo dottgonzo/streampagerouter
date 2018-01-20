@@ -57,19 +57,20 @@
     var channel = params.split('channel=')[1].split('&')[0]
     var hostname = params.split('hostname=')[1].split('&')[0]
 
-    var hlsport = false
+    var hlsPort = false
 
     if (location.href.split('hlsPort=').length > 1) {
-      hlsport = parseInt(location.href.split('hlsPort=')[1].split('&')[0])
+      hlsPort = parseInt(location.href.split('hlsPort=')[1].split('&')[0])
     } else if (location.href.split('://')[0] != 'https') {
-      hlsport = 80
+      hlsPort = 80
     }
 
     var options = {
       channel: channel,
       el: 'streamvideo', // default is videojs
       hostname: hostname,
-      swfLib: '../bower/streampagelib/GrindPlayer.swf'
+      swfLib: '../bower/streampagelib/GrindPlayer.swf',
+      hlsPort: hlsPort
     }
     if (params.split('ratio43=').length > 1 && params.split('ratio43=')[1].split('&')[0] === 'true') {
       options.ratio43 = true
