@@ -57,6 +57,14 @@
     var channel = params.split('channel=')[1].split('&')[0]
     var hostname = params.split('hostname=')[1].split('&')[0]
 
+    var hlsport = false
+
+    if (location.href.split('hlsPort=').length > 1) {
+      hlsport = parseInt(location.href.split('hlsPort=')[1].split('&')[0])
+    } else if (location.href.split('://')[0] != 'https') {
+      hlsport = 80
+    }
+
     var options = {
       channel: channel,
       el: 'streamvideo', // default is videojs
